@@ -72,9 +72,15 @@ Skrip Python menulis GeoJSON. Skrip `p-*-verify.mjs` membuka peta (Playwright) d
 5. Cara jalankan — [05-CARA-JALANKAN.md](./docs/60-80/05-CARA-JALANKAN.md)
 6. Batas — [06-BATAS.md](./docs/60-80/06-BATAS.md)
 
-## B — Requirement source (cited, not rewritten as our paper)
+## 81–100% — siap dibuka dan didemo
 
-## B — Requirement source (cited, not rewritten as our paper)
+Folder: [`docs/80-100/`](./docs/80-100/)
+
+1. Peta folder — [01-PETA-REPO.md](./docs/80-100/01-PETA-REPO.md)
+2. Cara pakai — [02-CARA-PAKAI.md](./docs/80-100/02-CARA-PAKAI.md)
+3. Sitasi — [03-SITASI.md](./docs/80-100/03-SITASI.md)
+4. Demo lima menit — [04-DEMO.md](./docs/80-100/04-DEMO.md)
+5. Indeks A–Z — [05-INDEKS.md](./docs/80-100/05-INDEKS.md)
 
 ## B — Requirement source (cited, not rewritten as our paper)
 
