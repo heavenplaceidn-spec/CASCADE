@@ -1,0 +1,14 @@
+node_modules
+.vercel
+.output
+dist
+.tanstack
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+.grok/app-env.json
+scripts/__pycache__
+**/__pycache__
+*.pyc

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "CASCADE WebGIS"
+message: Cite this software if you use the code or proposed corridors.
+type: software
+authors:
+  - family-names: Arckzz
+    alias: Arckzz
+    website: https://github.com/Arckzz
+repository-code: https://github.com/heavenplaceidn-spec/CASCADE
+license: MIT
+keywords: [WebGIS, Jabodetabek, SDSS, TransJakarta, MRT, LRT, KRL]
