@@ -59,6 +59,21 @@ Folder: [`docs/40-60/`](./docs/40-60/)
 
 Ringkasnya: satu peta tidak di-reset saat pindah menu. Existing, masterplan, dan usulan CASCADE dibedakan dari **corak**, moda dari **warna**. AI hanya merangkum data yang sudah ada.
 
+## 61–80% — rebuild, tes, bukti layar
+
+Folder: [`docs/60-80/`](./docs/60-80/)
+
+Skrip Python menulis GeoJSON. Skrip `p-*-verify.mjs` membuka peta (Playwright) dan membekukan hash koordinat. 46 PNG di [`screenshots/`](./screenshots/) adalah hasil tes, bukan mockup.
+
+1. Rebuild — [01-REBUILD.md](./docs/60-80/01-REBUILD.md)
+2. Hash beku — [02-HASH-BEKU.md](./docs/60-80/02-HASH-BEKU.md)
+3. Verify — [03-VERIFY.md](./docs/60-80/03-VERIFY.md)
+4. Screenshot — [04-SCREENSHOT.md](./docs/60-80/04-SCREENSHOT.md)
+5. Cara jalankan — [05-CARA-JALANKAN.md](./docs/60-80/05-CARA-JALANKAN.md)
+6. Batas — [06-BATAS.md](./docs/60-80/06-BATAS.md)
+
+## B — Requirement source (cited, not rewritten as our paper)
+
 ## B — Requirement source (cited, not rewritten as our paper)
 
 ## B — Requirement source (cited, not rewritten as our paper)
