@@ -38,6 +38,10 @@ Satu halaman untuk menemukan semua dokumentasi yang sudah di-push.
 - [Sitasi](./03-SITASI.md)
 - [Demo](./04-DEMO.md)
 
+## Bab tambahan — optimasi
+
+- [Catatan tahap](../optimasi/CATATAN-TAHAP.md)
+
 ## Berkas hukum
 
 - [LICENSE](../../LICENSE)

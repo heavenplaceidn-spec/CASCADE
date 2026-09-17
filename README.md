@@ -82,6 +82,14 @@ Folder: [`docs/80-100/`](./docs/80-100/)
 4. Demo lima menit — [04-DEMO.md](./docs/80-100/04-DEMO.md)
 5. Indeks A–Z — [05-INDEKS.md](./docs/80-100/05-INDEKS.md)
 
+## Bab tambahan — catatan tahap optimasi
+
+**Patch only.** Tidak rewrite, tidak ubah geometri, tidak ubah warna koridor.
+
+Folder: [`docs/optimasi/`](./docs/optimasi/)
+
+- [CATATAN-TAHAP.md](./docs/optimasi/CATATAN-TAHAP.md) — splash 1–100%, satu instance MapLibre, WebGL recover, ganti basemap tanpa refetch, label CASTJ display-only, survey layer.
+
 ## B — Requirement source (cited, not rewritten as our paper)
 
 Assignment PRD:
