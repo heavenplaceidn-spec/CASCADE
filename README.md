@@ -30,6 +30,19 @@ Splash + mark: `public/cascade-mark.png`.
 
 ---
 
+
+## 21–40% — data (lapisan ini)
+
+Semua angka dari file, bukan karangan: [`docs/20-40/`](./docs/20-40/).
+
+1. Lineage — [docs/20-40/01-LINEAGE.md](./docs/20-40/01-LINEAGE.md)
+2. Existing TJ/KRL/MRT/LRT — [02-EXISTING-NETWORK.md](./docs/20-40/02-EXISTING-NETWORK.md)
+3. Attachment → rebuild — [03-ATTACHMENTS-MAP.md](./docs/20-40/03-ATTACHMENTS-MAP.md)
+4. 26 usulan CASCADE — [04-CORRIDOR-CATALOG.md](./docs/20-40/04-CORRIDOR-CATALOG.md)
+5. Masterplan acuan — [05-MASTERPLAN.md](./docs/20-40/05-MASTERPLAN.md)
+6. Properti — [06-PROPERTY.md](./docs/20-40/06-PROPERTY.md)
+7. Indeks file — [07-FILE-INDEX.md](./docs/20-40/07-FILE-INDEX.md)
+
 ## B — Requirement source (cited, not rewritten as our paper)
 
 Assignment PRD:
