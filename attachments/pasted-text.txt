@@ -1,0 +1,2170 @@
+NAHHH, **25/30 INI MEMANG ROMBAKAN FITUR**, bukan sekadar kosmetik. Gue tangkep alurnya: **Eksplorasi dibersihin → Simulasi dibikin lebih fokus → Analisis benar-benar jadi SDSS berbasis hasil simulasi + Drag to Identify → basemap selector dibenerin supaya beneran berfungsi.**
+
+Dan gue kasih penekanan ke Grok: **jangan bikin Drag to Identify sekadar kotak yang muncul, tapi harus benar-benar spatial query terhadap koridor yang ada di dalam/beririsan dengan kotak.**
+
+Copy-paste ini:
+
+```text id="patch25cascade"
+PATCH 25/30 — MAJOR FUNCTIONAL REFINEMENT
+CASCADE | WEBGIS MASS TRANSPORTATION DECISION SUPPORT SYSTEM
+
+STATUS:
+ADVANCED REFINEMENT / FUNCTIONAL OVERHAUL
+
+IMPORTANT:
+This patch is larger than the previous UI-only patches.
+
+DO NOT treat this as a cosmetic change.
+
+Several existing UI controls are currently redundant or non-functional and must be cleaned up.
+
+The Analysis tab also needs to become a REAL spatial decision-support workflow.
+
+READ THE CURRENT CODEBASE, COMPONENT STRUCTURE, DATA MODEL, MAP LAYERS, POPUPS, SIMULATION STATE, ANALYSIS STATE, and EXISTING SDSS LOGIC FIRST.
+
+DO NOT immediately rewrite everything.
+
+Inspect first.
+Understand first.
+Then implement the minimum architecture changes required.
+
+==================================================
+0. CORE PRINCIPLE
+==================================================
+
+CASCADE has three main tabs:
+
+1. EKSPLORASI
+2. SIMULASI
+3. ANALISIS
+
+Their roles must be clearly separated.
+
+EKSPLORASI:
+Explore transport network, layers, corridors, property context, and map information.
+
+SIMULASI:
+Simulate movement between origins/destinations and compare Existing / Masterplan / CASCADE.
+
+ANALISIS:
+Use spatial selection + simulation-derived indicators + property/spatial context to produce a Decision Support analysis for corridors.
+
+Do not duplicate unnecessary controls between tabs.
+
+==================================================
+1. EKSPLORASI — CLEAN UP PROPERTY CONTROLS
+==================================================
+
+CURRENT UI contains controls/text similar to:
+
+"Relasi transportasi (≤ 1 km)"
+
+"Existing Masterplan CASCADE"
+
+"Jenis listing"
+
+"Jual Sewa"
+
+and checkboxes around these elements.
+
+Some of these checkbox controls currently do not produce a meaningful visible change on the map.
+
+REMOVE NON-FUNCTIONAL CHECKBOXES.
+
+Do not leave controls that appear interactive but do nothing.
+
+The user should not see a checkbox unless it actually changes the corresponding map/data behavior.
+
+==================================================
+2. PROPERTY FILTER / RELATIONSHIP CLEANUP
+==================================================
+
+Review the current property interface.
+
+If a checkbox currently labeled:
+
+"Relasi transportasi (≤ 1 km)"
+
+does not actually modify the property visualization:
+
+REMOVE IT.
+
+If the Existing / Masterplan / CASCADE selector is not actually changing the displayed property relationship:
+
+REMOVE the redundant checkbox implementation.
+
+Do not create fake interaction.
+
+However, DO NOT remove the actual property information itself.
+
+Property functionality remains:
+
+• property points
+• sale/rent distinction
+• price context
+• corridor relationship
+• distance to corridor/station
+• property popup
+• price information
+
+Only redundant/non-functional controls should be removed.
+
+==================================================
+3. PROPERTY TEXT REFINEMENT
+==================================================
+
+Make the property explanation more natural and human-readable.
+
+Avoid overly robotic wording.
+
+Current style:
+
+"Intelijen harga sepanjang koridor"
+
+REMOVE THE WORD:
+
+"Intelijen"
+
+Do NOT use:
+
+"Intelijen harga..."
+
+Instead use simply:
+
+"PROPERTI"
+
+or another short natural heading appropriate to the current UI.
+
+The property section should feel like a normal professional GIS interface.
+
+==================================================
+4. PROPERTY EXPLANATORY TEXT
+==================================================
+
+Keep the useful explanation, but rewrite it in natural Indonesian.
+
+Current concept:
+
+"Pilih koridor existing, masterplan, atau CASCADE untuk melihat ringkasan harga di buffer koridor."
+
+Rewrite into concise, human-readable wording such as:
+
+"Pilih koridor untuk melihat ringkasan harga properti di sekitar koridor."
+
+The exact wording can be improved as long as:
+
+• natural Indonesian
+• concise
+• professional
+• not robotic
+• no plagiarism-like templated phrasing
+
+Do not unnecessarily change the meaning.
+
+==================================================
+5. PROPERTY PRICE DISCLAIMER
+==================================================
+
+Keep the important meaning of the price disclaimer:
+
+Harga yang ditampilkan berasal dari asking price listing publik dan bukan nilai transaksi.
+
+The existing concept:
+
+"Harga asking dari listing publik; kisaran kawasan dari indeks 2026. Bukan nilai transaksi."
+
+can be rewritten more naturally, for example:
+
+"Harga mengacu pada asking price dari listing publik dan kisaran kawasan tahun 2026. Angka ini bukan nilai transaksi."
+
+Use natural wording.
+
+Do not remove the disclaimer.
+
+Do not imply asking price = actual transaction price.
+
+==================================================
+6. JENIS LISTING
+==================================================
+
+Keep:
+
+Jual
+Sewa
+
+as useful property classification/filter ONLY if the control actually works.
+
+If it works:
+KEEP IT.
+
+If it currently exists only visually and does nothing:
+FIX it or remove it.
+
+Do not retain fake controls.
+
+==================================================
+7. "JALAN KONTEKS" MUST NOT BE A CHECKBOX
+==================================================
+
+CURRENT:
+
+[Jalan konteks] checkbox
+
+REMOVE THE CHECKBOX.
+
+This should NOT be an interactive layer toggle.
+
+It is explanatory information.
+
+Move the information into the bottom section of the LEGEND.
+
+==================================================
+8. LEGEND INFORMATION
+==================================================
+
+The legend already works correctly from PATCH 23/30.
+
+DO NOT redesign its visual structure.
+
+Only add/rewrite the explanatory network-count text at the bottom of the legend.
+
+The current wording:
+
+"6 lini KRL · 14 koridor TJ · 2 LRT · 1 MRT · 14 masterplan · 20 usulan"
+
+should become a natural, human-readable GIS information line.
+
+Preferred concept:
+
+"Jaringan transportasi: 6 lini KRL · 14 koridor TransJakarta · 2 LRT · 1 MRT · 14 masterplan · 20 koridor usulan"
+
+Use the actual current dataset counts.
+
+Do NOT hardcode incorrect counts if the current data registry differs.
+
+The wording should be:
+
+• concise
+• professional
+• human-readable
+• informative
+• not robotic
+
+This is INFORMATION, not a layer toggle.
+
+==================================================
+9. DO NOT ADD A CHECKBOX FOR THE LEGEND INFORMATION
+==================================================
+
+The bottom information line must NOT have:
+
+□
+
+No checkbox.
+
+No switch.
+
+No toggle.
+
+It is simply explanatory text.
+
+==================================================
+10. TAB 2 — SIMULASI CLEANUP
+==================================================
+
+Review the Simulation tab.
+
+There appears to be a redundant:
+
+"COMPARE"
+
+control containing:
+
+Existing
+Masterplan
+CASCADE
+
+This is unnecessary if the existing station/corridor search already displays the corridor category/type.
+
+For example, if the search result already identifies:
+
+CASCADE
+Existing
+Masterplan
+
+then REMOVE the redundant Compare control.
+
+Do not display two controls for the same concept.
+
+==================================================
+11. SIMULASI — KEEP ACTUAL FUNCTIONALITY
+==================================================
+
+DO NOT remove the actual scenario comparison functionality.
+
+The Simulation tab must still support:
+
+• Existing
+• Masterplan
+• CASCADE
+
+as scenarios where appropriate.
+
+The removal applies ONLY to the redundant UI selector.
+
+If scenario selection is already integrated into:
+
+• search result
+• corridor selection
+• route selection
+• simulation state
+
+reuse that.
+
+Do not duplicate it.
+
+==================================================
+12. SIMULATION SEARCH
+==================================================
+
+The search interface should clearly communicate the selected corridor type.
+
+Example conceptual result:
+
+CASTJ24
+CBD Ciledug – Monas via Joglo
+CASCADE
+
+or:
+
+MRT East-West
+Balaraja – Cikarang
+MASTERPLAN
+
+or:
+
+MRT Lebak Bulus – Bundaran HI
+EXISTING
+
+Use the current data model.
+
+Do not create duplicate scenario selectors.
+
+==================================================
+13. TAB 3 — ANALISIS IS NOW THE MAIN SDSS OUTPUT
+==================================================
+
+The Analysis tab currently has:
+
+"Drag to Identify"
+
+but the spatial identification workflow is not functioning properly.
+
+FIX THIS.
+
+The user must be able to:
+
+1. activate Drag to Identify
+2. drag a rectangle over the map
+3. release
+4. system identifies transport corridors inside/intersecting the selected area
+5. system evaluates them
+6. system displays MAXIMUM 3 corridors
+7. each corridor receives an SDSS priority category
+8. each corridor shows detailed evidence
+9. each corridor shows indicative development cost
+10. each corridor shows development rationale
+11. each corridor shows relevant property/land-price context
+
+This must be a REAL spatial query.
+
+==================================================
+14. DRAG TO IDENTIFY BEHAVIOR
+==================================================
+
+When Drag to Identify is activated:
+
+User presses mouse.
+
+User drags a rectangle.
+
+User releases.
+
+The rectangle becomes the analysis area.
+
+The application then performs a spatial intersection/query:
+
+DRAG BOX
+↓
+TRANSPORT CORRIDOR INTERSECTION
+↓
+CANDIDATE CORRIDORS
+↓
+CALCULATE INDICATORS
+↓
+RANK BY SDSS PRIORITY SCORE
+↓
+RETURN MAX 3 CORRIDORS
+
+Do not simply select the nearest corridor.
+
+Do not select based on screen pixels alone.
+
+Use geographic geometry.
+
+==================================================
+15. SPATIAL QUERY RULE
+==================================================
+
+A corridor is a candidate if its geographic geometry:
+
+• intersects the drag rectangle
+OR
+• passes sufficiently through the selected analysis area according to the current spatial-analysis rule.
+
+Prefer actual geometry intersection.
+
+Do not use arbitrary nearest-distance selection unless needed as a fallback.
+
+If a corridor merely passes far outside the rectangle:
+DO NOT include it.
+
+==================================================
+16. ALL CORRIDOR TYPES
+==================================================
+
+Drag to Identify must be able to detect:
+
+• Existing
+• Masterplan
+• CASCADE
+
+and:
+
+• TransJakarta
+• KRL
+• LRT
+• MRT
+
+Use the actual current corridor registry.
+
+Do not hardcode only CASCADE corridors.
+
+==================================================
+17. MAXIMUM 3 CORRIDORS
+==================================================
+
+CRITICAL:
+
+The Analysis result must display MAXIMUM 3 corridors.
+
+If the drag area intersects:
+
+12 corridors
+
+do NOT display all 12.
+
+Calculate the SDSS score for the candidates and return the top 3 based on the defined decision-support score.
+
+The UI must explicitly communicate:
+
+"Menampilkan hingga 3 koridor yang paling relevan pada area terpilih."
+
+Use natural Indonesian.
+
+Do not call the result an official government decision.
+
+==================================================
+18. DO NOT HIDE THE REASON FOR SELECTION
+==================================================
+
+For each of the maximum 3 corridors, display:
+
+• corridor name
+• corridor ID
+• mode
+• type/status
+• priority category
+• SDSS score or normalized score
+• key indicators
+• stations/halte passed
+• indicative development cost
+• development rationale
+• property/land-price context
+
+The user must understand WHY the corridor appears.
+
+==================================================
+19. STATION / HALTE DETAIL
+==================================================
+
+For each selected corridor:
+
+SHOW THE STATIONS/HALTES PASSED BY THE CORRIDOR.
+
+This should be specific.
+
+Example:
+
+Koridor:
+CASTJ24
+
+Halte:
+1. ...
+2. ...
+3. ...
+4. ...
+5. ...
+
+The list must follow route sequence.
+
+Do NOT merely say:
+
+"8 halte"
+
+The user explicitly needs to know:
+
+LEWAT HALTE MANA SAJA.
+
+Use the current station/halte dataset.
+
+Do not invent station names.
+
+==================================================
+20. STATION DISPLAY
+==================================================
+
+Make the station list compact but complete.
+
+Example:
+
+HALTE / STASIUN
+01  Station A
+02  Station B
+03  Station C
+04  Station D
+
+If there are many stations:
+
+allow an expandable section:
+
+"Lihat seluruh halte"
+
+but the complete data must remain accessible.
+
+Do not remove information merely to keep the card short.
+
+==================================================
+21. INDICATIVE DEVELOPMENT COST
+==================================================
+
+For each selected corridor:
+
+display an INDICATIVE development cost.
+
+Example concept:
+
+"Perkiraan pembangunan:
+Rp X–Y triliun"
+
+IMPORTANT:
+
+This is NOT a DED.
+
+This is NOT an official project budget.
+
+This is NOT a contractor quotation.
+
+This is NOT a land-acquisition valuation.
+
+Label it clearly:
+
+"Perkiraan biaya indikatif"
+
+or:
+
+"Estimasi biaya indikatif"
+
+==================================================
+22. COST CALCULATION
+==================================================
+
+Use the current corridor length and available infrastructure assumptions.
+
+The model may consider:
+
+• corridor length
+• structure type
+• underground/elevated/at-grade assumption
+• number of stations
+• indicative unit cost assumptions
+
+BUT:
+
+DO NOT invent arbitrary numbers without a defined model.
+
+If the application already has cost assumptions:
+reuse them.
+
+If no cost model exists:
+create a transparent INDICATIVE model with clearly defined assumptions.
+
+For example conceptually:
+
+estimated_cost =
+corridor_length × indicative_unit_cost
++
+station_count × indicative_station_cost
++
+structure_adjustment
+
+The exact model must be documented in the UI or technical implementation.
+
+==================================================
+23. COST DISCLAIMER
+==================================================
+
+Every cost result should make clear:
+
+"Angka bersifat indikatif untuk perbandingan awal dan bukan RAB/DED."
+
+Do not imply financial certainty.
+
+Do not claim official government budget.
+
+==================================================
+24. DEVELOPMENT RATIONALE
+==================================================
+
+For each corridor, show WHY the corridor receives its analysis result.
+
+Potential evidence categories:
+
+• congestion pressure
+• network connectivity
+• accessibility gap
+• transport coverage
+• population/activity context
+• property context
+• road constraints
+• existing transit availability
+• masterplan relationship
+• survey evidence
+• structure requirements
+
+The explanation should be specific to the selected corridor.
+
+Do not output generic text such as:
+
+"Koridor ini penting untuk meningkatkan konektivitas."
+
+unless supported by actual indicators.
+
+==================================================
+25. ROAD / STRUCTURE REASON
+==================================================
+
+The analysis should identify relevant development constraints or characteristics where data supports them.
+
+Examples:
+
+"Segmen tertentu membutuhkan struktur elevated karena keterbatasan ruang jalan."
+
+or:
+
+"Segmen berada pada kawasan dengan kepadatan aktivitas tinggi sehingga pembangunan perlu mempertimbangkan ruang jalan."
+
+or:
+
+"Koridor melewati area dengan harga tanah relatif tinggi."
+
+IMPORTANT:
+
+Only state these when supported by the available spatial/data indicators.
+
+Do not hallucinate engineering requirements.
+
+==================================================
+26. PROPERTY / LAND PRICE CONTEXT
+==================================================
+
+For each selected corridor:
+
+show property context if property data exists.
+
+Examples:
+
+• median/average asking price
+• price per m²
+• price class
+• number of relevant listings
+• surrounding property potential
+
+Potential wording:
+
+"Harga tanah sekitar koridor: relatif tinggi"
+
+or:
+
+"Harga asking rata-rata: Rp X/m²"
+
+Use the existing property dataset.
+
+Do not call asking price actual transaction price.
+
+==================================================
+27. PROPERTY DATA RELATIONSHIP
+==================================================
+
+The property analysis should be spatially tied to the selected corridor.
+
+Use the existing corridor buffer logic.
+
+Do not analyze all Jabodetabek property listings.
+
+Use the property points within the relevant corridor analysis area.
+
+Do not modify transport geometry.
+
+==================================================
+28. SDSS PRIORITY SYSTEM
+==================================================
+
+THIS IS THE MAIN ANALYSIS CHANGE.
+
+The simulation's:
+
+RED
+YELLOW
+GREEN
+
+congestion/condition indicators must be converted into an SDSS-style priority output.
+
+Do NOT simply copy the simulation color.
+
+Instead:
+
+SIMULATION INDICATORS
+↓
+NORMALIZATION
+↓
+WEIGHTED SDSS SCORE
+↓
+PRIORITY CATEGORY
+
+The result is a Decision Support interpretation.
+
+==================================================
+29. PRIORITY CATEGORIES
+==================================================
+
+Use THREE priority classes:
+
+RED:
+TINGGI
+
+Meaning:
+Koridor menunjukkan kebutuhan intervensi pembangunan yang relatif tinggi berdasarkan indikator yang digunakan.
+
+YELLOW:
+SEDANG
+
+Meaning:
+Koridor cukup diperlukan berdasarkan kombinasi indikator, tetapi tekanannya tidak setinggi kategori tinggi.
+
+GREEN:
+RENDAH
+
+Meaning:
+Koridor tidak menunjukkan kebutuhan pembangunan baru yang tinggi dalam analisis saat ini; peningkatan jangkauan/akses dapat menjadi pertimbangan.
+
+IMPORTANT:
+
+Do NOT label the green category as "tidak berguna".
+
+Do not imply that a corridor should never be built.
+
+This is an indicative decision-support result.
+
+==================================================
+30. SDSS SCORE
+==================================================
+
+Create/use a transparent normalized score.
+
+Possible factors:
+
+1. congestion reduction potential
+2. accessibility / coverage
+3. network connectivity
+4. transport availability gap
+5. property/economic context
+6. planning/regulatory context
+
+These are aligned with the existing CASCADE PRD.
+
+Use the existing project weighting if already implemented.
+
+If weights already exist in the current code:
+DO NOT replace them without reason.
+
+If not implemented:
+create a documented weighted model.
+
+Example conceptual structure:
+
+SDSS Score =
+w1 congestion
++ w2 accessibility
++ w3 connectivity
++ w4 coverage_gap
++ w5 property_context
++ w6 planning_constraint
+
+Normalize to:
+
+0–100
+
+Then classify into:
+
+HIGH
+MEDIUM
+LOW
+
+The exact thresholds should be documented and consistently applied.
+
+==================================================
+31. SIMULATION → ANALYSIS CONNECTION
+==================================================
+
+The SDSS result should use the simulation's actual analytical outputs where available.
+
+For example:
+
+Simulation:
+• congestion condition
+• route flow
+• bottleneck intensity
+• speed/flow proxy
+
+Analysis:
+• converts these indicators into a corridor-level priority score.
+
+DO NOT simply read the map color visually.
+
+Use the underlying numerical/state data.
+
+==================================================
+32. IMPORTANT: RED/YELLOW/GREEN ARE NOT JUST DECORATION
+==================================================
+
+The simulation colors must have analytical meaning.
+
+RED:
+higher congestion pressure / intervention need
+
+YELLOW:
+moderate pressure
+
+GREEN:
+lower pressure
+
+Then Analysis converts these conditions into:
+
+HIGH
+MEDIUM
+LOW
+
+priority.
+
+Do not just copy the CSS color.
+
+==================================================
+33. MAX 3 + SDSS
+==================================================
+
+When the drag area identifies more than 3 candidate corridors:
+
+1. calculate score for all candidates
+2. sort by score descending
+3. select maximum 3
+4. display them
+5. show their priority class
+
+Example:
+
+AREA TERPILIH
+
+3 KORIDOR TERIDENTIFIKASI
+
+┌──────────────────────────────┐
+│ 01  Koridor A                │
+│     PRIORITAS TINGGI         │
+│     Score: 82                │
+│     ...                      │
+└──────────────────────────────┘
+
+┌──────────────────────────────┐
+│ 02  Koridor B                │
+│     PRIORITAS SEDANG         │
+│     Score: 61                │
+│     ...                      │
+└──────────────────────────────┘
+
+┌──────────────────────────────┐
+│ 03  Koridor C                │
+│     PRIORITAS RENDAH         │
+│     Score: 38                │
+│     ...                      │
+└──────────────────────────────┘
+
+Do not display a fourth corridor.
+
+==================================================
+34. DO NOT CALL THIS A FINAL GOVERNMENT DECISION
+==================================================
+
+Use terminology:
+
+"Decision Support"
+
+"Prioritas indikatif"
+
+"Analisis SDSS"
+
+Do NOT say:
+
+"Koridor ini wajib dibangun."
+
+Do NOT say:
+
+"Ini adalah keputusan pembangunan."
+
+The application supports analysis; it does not replace official planning processes.
+
+==================================================
+35. AI ROLE
+==================================================
+
+If the current Analysis tab uses AI:
+
+AI may summarize the COMPUTED analysis.
+
+AI MUST NOT calculate unsupported facts independently.
+
+AI input should be structured:
+
+{
+  corridor_id,
+  corridor_name,
+  score,
+  priority,
+  congestion_indicators,
+  accessibility,
+  connectivity,
+  property_context,
+  station_list,
+  indicative_cost,
+  constraints
+}
+
+AI output should summarize these inputs.
+
+Do not allow AI to invent:
+
+• station names
+• costs
+• land prices
+• route geometry
+• congestion data
+• planning status
+
+==================================================
+36. AI SUMMARY LENGTH
+==================================================
+
+Keep the existing concise AI insight behavior.
+
+Prefer:
+
+≤ 50 words
+
+for the summary.
+
+Detailed numeric information should remain in structured UI fields.
+
+==================================================
+37. DRAG RESULT PANEL
+==================================================
+
+After drag selection:
+
+Show the analysis result in the RIGHT-SIDE ANALYSIS PANEL.
+
+IMPORTANT:
+
+THE PANEL STAYS ON THE RIGHT.
+
+Do NOT move it to the left.
+
+Legend remains LEFT.
+
+Branding remains TOP-LEFT.
+
+Map remains center.
+
+==================================================
+38. DRAG RECTANGLE VISUAL
+==================================================
+
+While dragging:
+
+show a clear semi-transparent selection rectangle.
+
+After release:
+
+keep the rectangle visible while results are shown.
+
+Provide:
+
+"Clear selection"
+
+or equivalent.
+
+Do not make the selection permanent if the user wants another analysis.
+
+==================================================
+39. RE-ANALYZE
+==================================================
+
+User should be able to drag another area immediately.
+
+When a new rectangle is created:
+
+• previous selection updates
+• previous result is replaced
+• new candidate corridors are calculated
+• maximum 3 results displayed
+
+Do not require a page reload.
+
+==================================================
+40. NO FALSE RESULTS
+==================================================
+
+If no corridor intersects the selected area:
+
+Show:
+
+"Tidak ada koridor transportasi yang teridentifikasi pada area ini."
+
+Do not fabricate results.
+
+If fewer than 3 corridors exist:
+
+show only the actual number.
+
+Example:
+
+1 corridor:
+show 1.
+
+2 corridors:
+show 2.
+
+3+:
+show maximum 3.
+
+==================================================
+41. MAP HIGHLIGHT
+==================================================
+
+When a corridor appears in the Analysis result:
+
+highlight that corridor on the map.
+
+The highlight must NOT destroy its original identity.
+
+Keep:
+
+• dual-color styling
+• solid/dashed state
+• Existing/Masterplan/CASCADE identity
+• mode color
+
+A subtle outer glow or increased width is acceptable.
+
+Do NOT turn the corridor entirely red just because it is priority high.
+
+Priority color belongs to the ANALYSIS RESULT CARD / SDSS indicator.
+
+The transport line itself retains its transport symbology.
+
+==================================================
+42. PRIORITY COLORS
+==================================================
+
+Use:
+
+HIGH:
+RED
+
+MEDIUM:
+YELLOW
+
+LOW:
+GREEN
+
+These colors apply to:
+
+• priority badge
+• score indicator
+• analysis result card accent
+
+NOT necessarily to the transport line itself.
+
+==================================================
+43. MAPID BASEMAP CONTROL
+==================================================
+
+The current text:
+
+"Gaya MAPID"
+
+must be renamed.
+
+Use:
+
+"Tampilan Peta"
+
+This is more natural for users.
+
+==================================================
+44. TAMPILAN PETA OPTIONS MUST ACTUALLY WORK
+==================================================
+
+The control should provide the available MAPID basemap styles.
+
+Examples may include:
+
+• Basic
+• Dark
+• Satellite
+• other styles already supported by MAPID
+
+DO NOT invent unsupported MAPID styles.
+
+Inspect the current MAPID implementation and available styles first.
+
+Only expose styles that can actually be loaded.
+
+==================================================
+45. BASEMAP SWITCHING
+==================================================
+
+When user selects:
+
+DARK
+
+the basemap must actually become dark.
+
+When user selects:
+
+SATELLITE
+
+the basemap must actually become satellite imagery.
+
+When user selects:
+
+BASIC
+
+the basemap must actually become the basic map.
+
+The selector must not merely change its text.
+
+==================================================
+46. TRANSPORT CORRIDORS MUST REMAIN VISIBLE
+==================================================
+
+CRITICAL:
+
+Changing basemap must NOT remove transport layers.
+
+After switching:
+
+Basic → Dark
+
+or:
+
+Dark → Satellite
+
+or:
+
+Satellite → Basic
+
+the following must remain visible:
+
+• Existing corridors
+• Masterplan corridors
+• CASCADE corridors
+• stations/halts
+• selected analysis highlight
+• other active overlays
+
+The basemap is underneath.
+
+Transport data is overlay data.
+
+Do not accidentally rebuild or remove overlay layers when switching styles.
+
+==================================================
+47. MAPID STYLE STATE
+==================================================
+
+The current basemap selection should persist while navigating between:
+
+Eksplorasi
+Simulasi
+Analisis
+
+unless the current architecture intentionally resets it.
+
+Prefer shared map/basemap state if all tabs use the same map context.
+
+Do not create separate disconnected basemap selectors.
+
+==================================================
+48. MAPID CONTROL POSITION
+==================================================
+
+Keep the existing correct layout from PATCH 23/24:
+
+LEFT SIDE
+Legend
+
+BELOW LEGEND
+Tampilan Peta
+
+Do NOT move it to the right.
+
+Do NOT move it back to the center.
+
+==================================================
+49. RIGHT-SIDE PANEL
+==================================================
+
+Maintain:
+
+RIGHT:
+Layer panel / Analysis panel
+
+LEFT:
+Legend / map style
+
+This spatial hierarchy must remain.
+
+==================================================
+50. TAB 3 FULL LAYOUT
+==================================================
+
+Target:
+
+TOP-LEFT:
+small transparent CASCADE branding
+
+CENTER:
+MAP
+
+LEFT-BOTTOM:
+LEGEND
+
+BELOW LEGEND:
+Tampilan Peta
+
+RIGHT:
+ANALISIS / DRAG TO IDENTIFY PANEL
+
+When drag selection occurs:
+
+RIGHT PANEL updates with:
+
+Area terpilih
+↓
+Koridor teridentifikasi
+↓
+Maximum 3 corridors
+↓
+SDSS priority
+↓
+Stations
+↓
+Indicative cost
+↓
+Reasons
+↓
+Property context
+
+==================================================
+51. DO NOT BREAK TAB 1
+==================================================
+
+Tab 1 must retain:
+
+• transport layers
+• property layer
+• legend
+• map
+• CASCADE branding
+• popup
+• per-corridor GeoJSON download
+• station data
+• MAPID basemap
+
+Only remove the useless checkbox controls.
+
+==================================================
+52. DO NOT BREAK TAB 2
+==================================================
+
+Tab 2 must retain:
+
+• station search
+• origin/destination
+• route simulation
+• Existing/Masterplan/CASCADE scenario logic
+• flow animation
+• bottleneck visualization
+• corridor comparison
+
+Only remove redundant "COMPARE" UI if its function is already represented elsewhere.
+
+==================================================
+53. DO NOT BREAK GEOJSON DOWNLOAD
+==================================================
+
+PATCH 23/30 already fixed per-corridor GeoJSON download.
+
+DO NOT TOUCH OR BREAK IT.
+
+Verify:
+
+click corridor
+→ popup
+→ download icon
+→ clicked corridor only
+→ valid GeoJSON
+
+The download must remain per corridor.
+
+Do not make Analysis or Simulation changes break the popup feature identity.
+
+==================================================
+54. DO NOT CHANGE TRANSPORT GEOMETRY
+==================================================
+
+ABSOLUTE RULE.
+
+Do not regenerate:
+
+• Existing
+• Masterplan
+• CASCADE
+
+Do not reroute.
+
+Do not redraw.
+
+Do not replace with OSM.
+
+Do not simplify source geometry unnecessarily.
+
+The Analysis spatial query must operate on the EXISTING geometry.
+
+==================================================
+55. DATA SOURCES FOR SDSS
+==================================================
+
+Use the actual data already available in CASCADE.
+
+Potential indicators:
+
+• simulation congestion
+• bottleneck data
+• transport coverage
+• accessibility
+• network connectivity
+• property context
+• population/activity data
+• road context
+• survey evidence
+• planning/masterplan context
+
+Do not fabricate missing values.
+
+If an indicator is unavailable:
+
+mark it unavailable or adjust the score model transparently.
+
+Do not silently replace missing data with random numbers.
+
+==================================================
+56. SPATIAL COMPUTATION
+==================================================
+
+Use geographic spatial operations.
+
+Conceptually:
+
+dragPolygon / dragRectangle
+↓
+intersects(corridor.geometry, selectedArea)
+↓
+candidateCorridors
+↓
+calculateIndicators(candidate)
+↓
+calculateSDSSScore(candidate)
+↓
+sort
+↓
+slice(0,3)
+↓
+render
+
+Use the project's existing GIS library/backend where appropriate.
+
+Do not implement a fake pixel-based nearest search.
+
+==================================================
+57. PERFORMANCE
+==================================================
+
+Drag-to-identify should not reload the entire map.
+
+Do not rebuild all transport layers every time the user drags.
+
+Use:
+
+• spatial indexing
+• precomputed metadata where possible
+• cached indicators
+• client-side spatial query for manageable datasets
+• backend spatial query if the current architecture supports it
+
+Choose the existing architecture's most appropriate approach.
+
+==================================================
+58. RESULT CACHING
+==================================================
+
+If practical:
+
+cache analysis results by:
+
+selected area geometry/hash
++
+scenario/state
+
+This avoids recalculating identical selections.
+
+Do not over-engineer if the current dataset is small.
+
+==================================================
+59. MOBILE / SMALL SCREEN
+==================================================
+
+Desktop is the primary target.
+
+On smaller screens:
+
+• Analysis panel may become a bottom sheet
+• Legend may collapse
+• Map remains usable
+• Drag selection remains functional
+
+Do not break desktop layout to optimize mobile.
+
+==================================================
+60. NATURAL INDONESIAN UI
+==================================================
+
+Review visible wording throughout the affected components.
+
+Avoid robotic phrases.
+
+Prefer natural Indonesian:
+
+"Tampilan Peta"
+
+"Properti"
+
+"Koridor terpilih"
+
+"Area terpilih"
+
+"Perkiraan biaya indikatif"
+
+"Prioritas tinggi"
+
+"Prioritas sedang"
+
+"Prioritas rendah"
+
+"Halte / stasiun"
+
+"Alasan analisis"
+
+"Ringkasan properti"
+
+Avoid excessive technical English where an understandable Indonesian term exists.
+
+Keep established technical terms such as:
+
+GeoJSON
+SDSS
+Existing
+Masterplan
+CASCADE
+TransJakarta
+KRL
+LRT
+MRT
+
+==================================================
+61. UI COPY REFINEMENT
+==================================================
+
+Property explanatory text should be concise and natural.
+
+Suggested structure:
+
+PROPERTI
+
+[Pilih tipe / listing if functional]
+
+"Gunakan koridor terpilih untuk melihat kondisi harga properti di sekitarnya."
+
+"Harga mengacu pada asking price dari listing publik dan kisaran kawasan tahun 2026. Angka ini bukan nilai transaksi."
+
+Do not copy this literally if better natural wording exists.
+
+==================================================
+62. LEGEND FOOTNOTE
+==================================================
+
+At the bottom of the legend:
+
+"Jaringan transportasi: 6 lini KRL · 14 koridor TransJakarta · 2 LRT · 1 MRT · 14 masterplan · 20 koridor usulan"
+
+Use actual data counts.
+
+No checkbox.
+
+No "Jalan konteks" label if it no longer accurately represents the content.
+
+This is informational metadata.
+
+==================================================
+63. ANALYSIS CARD STRUCTURE
+==================================================
+
+Recommended result card:
+
+┌────────────────────────────────────┐
+│ KORIDOR 01                         │
+│ CASTJ24                            │
+│ CBD Ciledug – Monas via Joglo      │
+│                                    │
+│ PRIORITAS TINGGI          82/100  │
+│                                    │
+│ HALTE / STASIUN                    │
+│ • ...                              │
+│ • ...                              │
+│ • ...                              │
+│                                    │
+│ PERKIRAAN BIAYA                    │
+│ Rp X–Y triliun                     │
+│                                    │
+│ ALASAN ANALISIS                    │
+│ ...                                │
+│                                    │
+│ KONTEKS PROPERTI                   │
+│ ...                                │
+└────────────────────────────────────┘
+
+Keep the card readable.
+
+If station list is long:
+make it expandable.
+
+==================================================
+64. SCORE EXPLANATION
+==================================================
+
+Provide an expandable:
+
+"Dasar penilaian"
+
+showing the main factors used.
+
+Example:
+
+Kemacetan: 82
+Aksesibilitas: 74
+Konektivitas: 88
+Kesenjangan layanan: 79
+Properti: 65
+
+Do not expose internal implementation details that are irrelevant.
+
+The purpose is transparency.
+
+==================================================
+65. SDSS IS NOT A SIMPLE CONGESTION RANKING
+==================================================
+
+DO NOT calculate priority solely from congestion.
+
+The SDSS should combine multiple indicators.
+
+A highly congested corridor may not automatically become the highest priority if:
+
+• accessibility is already high
+• network connectivity is already strong
+• existing transit already covers the area
+• property/planning constraints significantly affect feasibility
+
+Conversely, a corridor with moderate congestion may receive higher priority if it addresses a major accessibility gap and network connectivity need.
+
+Use the existing PRD logic.
+
+==================================================
+66. EXISTING VS MASTERPLAN VS CASCADE
+==================================================
+
+Analysis must preserve corridor category.
+
+Example:
+
+Existing:
+already operating
+
+Masterplan:
+planning/reference corridor
+
+CASCADE:
+proposed corridor
+
+Do not treat all three as equivalent implementation status.
+
+The SDSS output should show the type/status clearly.
+
+==================================================
+67. PRIORITY INTERPRETATION
+==================================================
+
+Use natural explanatory language.
+
+HIGH:
+"Menunjukkan kebutuhan intervensi yang relatif tinggi berdasarkan indikator analisis."
+
+MEDIUM:
+"Menunjukkan kebutuhan intervensi pada tingkat menengah."
+
+LOW:
+"Tekanan pembangunan baru relatif rendah; peningkatan jangkauan dapat menjadi alternatif."
+
+These are indicative interpretations, not official decisions.
+
+==================================================
+68. NO HALLUCINATED COST
+==================================================
+
+If cost data cannot be calculated reliably:
+
+display:
+
+"Estimasi biaya belum dapat dihitung dari data yang tersedia."
+
+Do NOT fabricate a number.
+
+If cost is calculated:
+
+show the assumptions.
+
+==================================================
+69. NO HALLUCINATED PROPERTY DATA
+==================================================
+
+If no property listings exist around a corridor:
+
+say:
+
+"Data properti yang tersedia belum cukup untuk memberikan ringkasan harga."
+
+Do not invent price values.
+
+==================================================
+70. NO HALLUCINATED STATIONS
+==================================================
+
+If a corridor has no station data:
+
+do not invent station names.
+
+Show:
+
+"Data halte/stasiun belum tersedia."
+
+==================================================
+71. DRAG SELECTION + DOWNLOAD
+==================================================
+
+Do not break per-corridor GeoJSON download.
+
+If the user clicks a highlighted corridor in Analysis:
+
+the popup/download should still resolve the exact corridor ID.
+
+The same corridor download system from PATCH 23/30 must continue working.
+
+==================================================
+72. BROWSER QA
+==================================================
+
+Actually run the application.
+
+TEST TAB 1:
+
+[ ] Property useless checkboxes removed.
+[ ] Property useful filters remain functional.
+[ ] "Intelijen" removed from heading.
+[ ] Property wording is natural.
+[ ] "Jalan konteks" checkbox removed.
+[ ] Network information appears at bottom of legend.
+[ ] No checkbox for the network information.
+[ ] Legend remains LEFT.
+[ ] Tampilan Peta remains BELOW legend.
+[ ] Basic works.
+[ ] Dark works.
+[ ] Satellite works.
+[ ] Transport overlays remain visible after switching basemap.
+
+==================================================
+73. TAB 2 QA
+==================================================
+
+[ ] Redundant COMPARE control removed.
+[ ] Existing/Masterplan/CASCADE information remains available through search/selection.
+[ ] Origin works.
+[ ] Destination works.
+[ ] Simulation works.
+[ ] Flow animation works.
+[ ] Bottleneck visualization works.
+[ ] Existing/Masterplan/CASCADE scenarios remain functional.
+[ ] Per-corridor GeoJSON download remains functional.
+
+==================================================
+74. TAB 3 DRAG QA
+==================================================
+
+Test at least 3 different map areas.
+
+For each:
+
+[ ] Activate Drag to Identify.
+[ ] Draw rectangle.
+[ ] Rectangle appears.
+[ ] Spatial intersection runs.
+[ ] Candidate corridors identified.
+[ ] Maximum 3 results displayed.
+[ ] Fewer than 3 shown if fewer exist.
+[ ] Each result has corridor ID.
+[ ] Each result has corridor name.
+[ ] Each result has mode.
+[ ] Each result has Existing/Masterplan/CASCADE status.
+[ ] Priority category appears.
+[ ] SDSS score appears.
+[ ] Stations/halts are listed.
+[ ] Station sequence is correct.
+[ ] Indicative cost appears if computable.
+[ ] Reason appears.
+[ ] Property context appears if data exists.
+[ ] Result highlights correct corridor on map.
+[ ] Highlight does not destroy corridor symbology.
+[ ] New drag replaces previous analysis.
+[ ] Clear selection works.
+
+==================================================
+75. SPECIAL SDSS QA
+==================================================
+
+Test an area with:
+
+• high congestion
+• moderate congestion
+• lower congestion
+
+Confirm that the resulting priority classification responds to the underlying numerical indicators.
+
+Do not make all selected corridors automatically HIGH.
+
+The result should depend on the actual computed SDSS score.
+
+==================================================
+76. SPECIAL MAX-3 QA
+==================================================
+
+Select a dense area containing more than 3 corridors.
+
+Confirm:
+
+candidate count may be >3 internally
+
+BUT:
+
+UI result count <=3.
+
+The selection should be based on SDSS score.
+
+Do not simply take the first three array entries.
+
+==================================================
+77. BASEMAP QA
+==================================================
+
+Test:
+
+Basic
+→ Dark
+→ Satellite
+→ Basic
+
+After each change confirm:
+
+[ ] map changes
+[ ] transport lines remain
+[ ] stations remain
+[ ] selected corridor remains
+[ ] analysis selection remains where appropriate
+[ ] no duplicate map layers appear
+[ ] no overlays disappear
+[ ] no console errors
+
+==================================================
+78. UI REGRESSION QA
+==================================================
+
+Verify:
+
+[ ] transparent CASCADE branding remains in Tab 1
+[ ] transparent CASCADE branding remains in Tab 2
+[ ] transparent CASCADE branding remains in Tab 3
+[ ] legend remains LEFT
+[ ] MAPID/Tampilan Peta remains below legend
+[ ] right-side panel remains RIGHT
+[ ] Analysis panel remains RIGHT
+[ ] old title card does not return
+[ ] loading screen remains unchanged
+[ ] loading progress 10–100 remains
+[ ] Mulai Eksplorasi still works
+
+==================================================
+79. DATA REGRESSION QA
+==================================================
+
+Confirm:
+
+[ ] no corridor geometry changed
+[ ] no station geometry changed
+[ ] no property geometry changed
+[ ] no transport layer deleted
+[ ] no Masterplan route regenerated
+[ ] no CASCADE route regenerated
+[ ] no OSM rerouting introduced
+[ ] no GeoJSON download regression
+[ ] CASTJ24 and CASTJ25 remain separate
+[ ] overlapping corridors remain separate
+
+==================================================
+80. PERFORMANCE QA
+==================================================
+
+Check:
+
+[ ] map remains responsive
+[ ] drag selection does not freeze the UI
+[ ] basemap switching does not duplicate overlays
+[ ] analysis does not reload entire page
+[ ] no repeated API requests caused by every mouse movement
+[ ] calculation occurs after drag release, not every pixel of drag
+[ ] repeated identical selections can reuse cached results where appropriate
+
+==================================================
+81. SECURITY
+==================================================
+
+Do not expose secrets.
+
+Use:
+
+${MAPID_API_KEY}
+
+where required.
+
+Do not hardcode private API keys.
+
+Do not put API credentials into GeoJSON.
+
+Do not send secrets into AI prompts.
+
+==================================================
+82. IMPLEMENTATION PRIORITY
+==================================================
+
+Implement in this order:
+
+PHASE 1:
+Audit current UI and data flow.
+
+PHASE 2:
+Remove useless/non-functional checkboxes.
+
+PHASE 3:
+Clean property wording.
+
+PHASE 4:
+Move "Jalan konteks" information into legend footer.
+
+PHASE 5:
+Remove redundant Simulation Compare UI.
+
+PHASE 6:
+Fix real Drag to Identify spatial query.
+
+PHASE 7:
+Implement maximum-3 corridor selection.
+
+PHASE 8:
+Connect simulation indicators to SDSS scoring.
+
+PHASE 9:
+Build detailed corridor analysis cards.
+
+PHASE 10:
+Fix "Tampilan Peta" basemap switching.
+
+PHASE 11:
+Run full browser regression testing.
+
+DO NOT skip directly to Phase 11.
+
+==================================================
+83. IMPORTANT IMPLEMENTATION RULE
+==================================================
+
+DO NOT fake functionality.
+
+A visible button/control is NOT considered implemented unless:
+
+• it changes the intended state
+• the map visibly responds
+• data remains correct
+• there are no console errors
+
+This applies especially to:
+
+Drag to Identify
+Tampilan Peta
+Property filters
+SDSS
+GeoJSON download
+
+==================================================
+84. FINAL ACCEPTANCE CRITERIA
+==================================================
+
+PATCH 25/30 IS COMPLETE ONLY IF:
+
+EXPLORATION:
+
+[ ] useless property checkbox controls removed
+[ ] useful property filters remain functional
+[ ] "Intelijen" removed
+[ ] property wording natural
+[ ] asking-price disclaimer retained
+[ ] "Jalan konteks" checkbox removed
+[ ] network information moved to bottom of legend
+[ ] network information rewritten naturally
+[ ] no checkbox on network information
+
+SIMULATION:
+
+[ ] redundant Compare control removed
+[ ] Existing/Masterplan/CASCADE distinction remains available
+[ ] search still communicates corridor type
+[ ] simulation remains functional
+
+ANALYSIS:
+
+[ ] Drag to Identify actually works
+[ ] geographic spatial intersection is used
+[ ] candidate corridors are identified from actual geometry
+[ ] maximum 3 corridors displayed
+[ ] top 3 selected using SDSS score
+[ ] stations/halts listed per corridor
+[ ] station order follows route
+[ ] indicative cost shown when computable
+[ ] cost assumptions are transparent
+[ ] development rationale shown
+[ ] property context shown when available
+[ ] SDSS score calculated
+[ ] score uses multiple indicators
+[ ] simulation indicators contribute to analysis
+[ ] HIGH/MEDIUM/LOW priority classification works
+[ ] RED/YELLOW/GREEN priority visualization works
+[ ] priority color does not overwrite transport line symbology
+[ ] analysis result highlights correct corridor
+[ ] no fabricated data
+[ ] no hallucinated costs
+[ ] no hallucinated stations
+[ ] no hallucinated property prices
+
+MAP:
+
+[ ] "Gaya MAPID" renamed to "Tampilan Peta"
+[ ] Basic works
+[ ] Dark works
+[ ] Satellite works
+[ ] available styles are actually supported
+[ ] transport overlays remain visible
+[ ] station overlays remain visible
+[ ] switching basemap does not duplicate overlays
+[ ] right-side panel remains RIGHT
+[ ] legend remains LEFT
+[ ] Tampilan Peta remains BELOW legend
+
+REGRESSION:
+
+[ ] CASCADE branding remains on all 3 tabs
+[ ] loading screen unchanged
+[ ] 10–100 loading progress unchanged
+[ ] GeoJSON per-corridor download still works
+[ ] transport geometry unchanged
+[ ] station data unchanged
+[ ] property data unchanged
+[ ] CASTJ24 / CASTJ25 remain separate
+[ ] existing corridors remain intact
+[ ] masterplan remains intact
+[ ] CASCADE corridors remain intact
+[ ] no API secrets exposed
+
+==================================================
+85. FINAL REPORT
+==================================================
+
+After implementation, provide a detailed report:
+
+1. FILES MODIFIED
+2. USELESS CONTROLS REMOVED
+3. PROPERTY UI CHANGES
+4. LEGEND INFORMATION CHANGES
+5. SIMULATION CHANGES
+6. DRAG TO IDENTIFY IMPLEMENTATION
+7. SPATIAL QUERY METHOD
+8. MAX-3 CORRIDOR LOGIC
+9. SDSS SCORING MODEL
+10. SDSS PRIORITY THRESHOLDS
+11. SIMULATION → SDSS DATA FLOW
+12. STATION DATA USED
+13. COST ESTIMATION MODEL
+14. PROPERTY CONTEXT MODEL
+15. TAMPILAN PETA IMPLEMENTATION
+16. BASEMAPS ACTUALLY TESTED
+17. BROWSER QA RESULTS
+18. REGRESSION TEST RESULTS
+19. ANY REMAINING LIMITATION
+
+IMPORTANT:
+
+DO NOT SAY "DONE" JUST BECAUSE THE UI LOOKS CORRECT.
+
+THIS PATCH MUST BE FUNCTIONALLY VERIFIED.
+
+ESPECIALLY VERIFY:
+
+DRAG TO IDENTIFY
+→ REAL SPATIAL QUERY
+→ MAX 3 CORRIDORS
+→ SDSS SCORE
+→ PRIORITY
+→ STATIONS
+→ COST
+→ REASON
+→ PROPERTY CONTEXT
+
+AND:
+
+TAMPILAN PETA
+→ ACTUAL BASEMAP CHANGE
+→ TRANSPORT OVERLAYS REMAIN VISIBLE.
+
+READ THE EXISTING CODE CAREFULLY.
+PRESERVE ALL CORRECT WORK.
+MAKE MINIMUM NECESSARY CHANGES OUTSIDE THE REQUESTED FEATURES.
+DO NOT REBUILD CASCADE FROM SCRATCH.
+```
+
+**Nah, inti arsitektur yang gue pengen Grok tangkep dari 25/30 ini:**
+
+```text
+SIMULASI
+   ↓
+indikator kemacetan
+   ↓
+aksesibilitas
+   ↓
+konektivitas
+   ↓
+kesenjangan layanan
+   ↓
+konteks properti
+   ↓
+kendala/perencanaan
+   ↓
+SDSS SCORE
+   ↓
+┌─────────────────────────┐
+│ PRIORITAS TINGGI  🔴    │
+│ PRIORITAS SEDANG 🟡     │
+│ PRIORITAS RENDAH  🟢    │
+└─────────────────────────┘
+```
+
+Terus **Drag to Identify bukan sekadar “ngeblok area”**:
+
+```text
+DRAG KOTAK
+     ↓
+INTERSECT DENGAN SEMUA KORIDOR
+     ↓
+MISAL 9 KORIDOR KETEMU
+     ↓
+HITUNG SDSS 9 KORIDOR
+     ↓
+URUTKAN BERDASARKAN SCORE
+     ↓
+AMBIL MAKS. 3
+     ↓
+┌───────────────────────┐
+│ KORIDOR A             │
+│ 🔴 TINGGI             │
+│ Score 84               │
+│ Halte: A, B, C, D...  │
+│ Biaya: Rp...          │
+│ Alasan: ...            │
+│ Properti: ...          │
+└───────────────────────┘
+```
+
+**Ini yang bakal bikin Tab 3 akhirnya terasa kayak SDSS beneran**, bukan cuma map yang dikasih kotak analisis. Dan gue sengaja kasih instruksi **jangan menjadikan warna merah/kuning/hijau sebagai warna garis koridor**, karena identitas transportasi lo yang dual-color itu sudah bagus dan jangan dirusak gara-gara SDSS.
