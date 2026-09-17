@@ -1,0 +1,22 @@
+{
+  "count": 261,
+  "zones": 66,
+  "summaries": 45,
+  "retrieved": "2026-09-13",
+  "disclaimer": "Harga mengacu pada asking price dari listing publik dan kisaran kawasan tahun 2026. Angka ini bukan nilai transaksi.",
+  "categories": [
+    "TANAH",
+    "RUKO",
+    "APARTEMEN/KOS"
+  ],
+  "price_classes": [
+    "MURAH",
+    "SEDANG",
+    "MAHAL"
+  ],
+  "colors": {
+    "MURAH": "#4FAF86",
+    "SEDANG": "#E5A13A",
+    "MAHAL": "#D62F7F"
+  }
+}

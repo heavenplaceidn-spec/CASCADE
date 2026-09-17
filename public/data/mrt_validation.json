@@ -1,0 +1,46 @@
+{
+  "stations": 13,
+  "expected_stations": 13,
+  "edges": 12,
+  "expected_edges": 12,
+  "sequence": [
+    "Lebak Bulus",
+    "Fatmawati",
+    "Cipete Raya",
+    "Haji Nawi",
+    "Blok A",
+    "Blok M",
+    "ASEAN",
+    "Senayan",
+    "Istora",
+    "Bendungan Hilir",
+    "Setiabudi",
+    "Dukuh Atas",
+    "Bundaran HI"
+  ],
+  "missing": [],
+  "far_from_rail": [],
+  "stats": {
+    "total_stations": 13,
+    "total_edges": 12,
+    "terminus": 2,
+    "interchange": 7,
+    "network_km": 15.15,
+    "profile": {
+      "elevated_km": 9.23,
+      "underground_km": 5.55,
+      "other_km": 0.37
+    }
+  },
+  "max_jump_m": 345.5,
+  "excluded": "MRT Fase 2 Bundaran HI–Kota–Ancol tidak dimasukkan.",
+  "issues": [],
+  "crs": "EPSG:4326",
+  "color": "#247A67",
+  "notes": [
+    "MRT&LRT.txt tidak ada di disk; 13 stasiun Fase 1 dari dokumen PASS 15.",
+    "Nama inti tanpa hak penamaan sponsor; naming_rights disimpan terpisah.",
+    "Geometri: OSM subway relation 9200637, bukan data resmi MRTJ.",
+    "Tidak ada cabang, loop, atau perpanjangan utara."
+  ]
+}

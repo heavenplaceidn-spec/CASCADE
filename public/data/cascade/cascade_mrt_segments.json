@@ -1,0 +1,478 @@
+{
+  "main": [
+    {
+      "segment_id": "01",
+      "from_node": "Lebak Bulus",
+      "to_node": "Lebak Bulus Selatan",
+      "road_name": "Jalan Lebak Bulus Raya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.61
+    },
+    {
+      "segment_id": "02",
+      "from_node": "Lebak Bulus Selatan",
+      "to_node": "Ciputat Timur",
+      "road_name": "Jalan Lebak Bulus Raya",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.76
+    },
+    {
+      "segment_id": "03",
+      "from_node": "Ciputat Timur",
+      "to_node": "Ciputat",
+      "road_name": "Jalan Ciputat Raya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.89
+    },
+    {
+      "segment_id": "04",
+      "from_node": "Ciputat",
+      "to_node": "Gaplek",
+      "road_name": "Jalan Laksamana RE Martadinata",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 4.11
+    },
+    {
+      "segment_id": "05",
+      "from_node": "Gaplek",
+      "to_node": "Pondok Cabe koridor",
+      "road_name": "Jalan Laksamana RE Martadinata",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.32
+    },
+    {
+      "segment_id": "06",
+      "from_node": "Pondok Cabe koridor",
+      "to_node": "Bojongsari Utara",
+      "road_name": "Jalan Raya Parung—Ciputat",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.99
+    },
+    {
+      "segment_id": "07",
+      "from_node": "Bojongsari Utara",
+      "to_node": "Bojongsari",
+      "road_name": "Jalan Raya Parung—Ciputat",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 3.13
+    },
+    {
+      "segment_id": "08",
+      "from_node": "Bojongsari",
+      "to_node": "Parung Bingung",
+      "road_name": "Jalan Raya Parung—Ciputat",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.47
+    },
+    {
+      "segment_id": "09",
+      "from_node": "Parung Bingung",
+      "to_node": "Sawangan",
+      "road_name": "Jalan Raya Sawangan",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.89
+    },
+    {
+      "segment_id": "10",
+      "from_node": "Sawangan",
+      "to_node": "Sawangan Timur",
+      "road_name": "Jalan Raya Sawangan",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 4.73
+    },
+    {
+      "segment_id": "11",
+      "from_node": "Sawangan Timur",
+      "to_node": "Mampang Depok",
+      "road_name": "Jalan Raya Sawangan",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.56
+    },
+    {
+      "segment_id": "12",
+      "from_node": "Mampang Depok",
+      "to_node": "Depok Baru",
+      "road_name": "Jalan Arif Rahman Hakim",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.97
+    },
+    {
+      "segment_id": "13",
+      "from_node": "Depok Baru",
+      "to_node": "Margonda Selatan",
+      "road_name": "Jalan Arif Rahman Hakim",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.45
+    },
+    {
+      "segment_id": "14",
+      "from_node": "Margonda Selatan",
+      "to_node": "Margonda",
+      "road_name": "Jalan Margonda Raya",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.29
+    },
+    {
+      "segment_id": "15",
+      "from_node": "Margonda",
+      "to_node": "Tole Iskandar",
+      "road_name": "Jalan Margonda Raya",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.76
+    },
+    {
+      "segment_id": "16",
+      "from_node": "Tole Iskandar",
+      "to_node": "Cimanggis",
+      "road_name": "Jalan Tole Iskandar",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.92
+    },
+    {
+      "segment_id": "17",
+      "from_node": "Cimanggis",
+      "to_node": "Cibubur",
+      "road_name": "Jalan Raya Bogor",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 5.35
+    },
+    {
+      "segment_id": "18",
+      "from_node": "Cibubur",
+      "to_node": "Ciracas",
+      "road_name": "Jalan Raya Bogor",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.67
+    },
+    {
+      "segment_id": "19",
+      "from_node": "Ciracas",
+      "to_node": "Pasar Rebo",
+      "road_name": "Jalan Raya Bogor",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.94
+    },
+    {
+      "segment_id": "20",
+      "from_node": "Pasar Rebo",
+      "to_node": "Cijantung",
+      "road_name": "Jalan Raya Bogor",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.15
+    },
+    {
+      "segment_id": "21",
+      "from_node": "Cijantung",
+      "to_node": "Raya Bogor KR",
+      "road_name": "Jalan Raya Bogor",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.68
+    },
+    {
+      "segment_id": "22",
+      "from_node": "Raya Bogor KR",
+      "to_node": "Tanah Merdeka",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.25
+    },
+    {
+      "segment_id": "23",
+      "from_node": "Tanah Merdeka",
+      "to_node": "Kampung Rambutan",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.66
+    },
+    {
+      "segment_id": "24",
+      "from_node": "Kampung Rambutan",
+      "to_node": "Raya Bogor Utara",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 2.58
+    },
+    {
+      "segment_id": "25",
+      "from_node": "Raya Bogor Utara",
+      "to_node": "Kramat Jati vertex",
+      "road_name": "Jalan Raya Bogor",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.44
+    },
+    {
+      "segment_id": "26",
+      "from_node": "Kramat Jati vertex",
+      "to_node": "PGC",
+      "road_name": "Jalan Raya Bogor",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.86
+    },
+    {
+      "segment_id": "27",
+      "from_node": "PGC",
+      "to_node": "Cililitan Condet",
+      "road_name": "Jalan Condet Raya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 0.99
+    },
+    {
+      "segment_id": "28",
+      "from_node": "Cililitan Condet",
+      "to_node": "Batu Ampar",
+      "road_name": "Jalan Condet Raya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.08
+    },
+    {
+      "segment_id": "29",
+      "from_node": "Batu Ampar",
+      "to_node": "Condet",
+      "road_name": "Jalan Condet Raya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 0.57
+    },
+    {
+      "segment_id": "30",
+      "from_node": "Condet",
+      "to_node": "Condet Utara",
+      "road_name": "Jalan Condet Raya",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.05
+    },
+    {
+      "segment_id": "31",
+      "from_node": "Condet Utara",
+      "to_node": "Dewi Sartika",
+      "road_name": "Jalan Dewi Sartika",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.86
+    },
+    {
+      "segment_id": "32",
+      "from_node": "Dewi Sartika",
+      "to_node": "Cawang",
+      "road_name": "Jalan Dewi Sartika",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.06
+    },
+    {
+      "segment_id": "33",
+      "from_node": "Cawang",
+      "to_node": "Otista",
+      "road_name": "Jalan Dewi Sartika",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.95
+    },
+    {
+      "segment_id": "34",
+      "from_node": "Otista",
+      "to_node": "Kampung Melayu",
+      "road_name": "Jalan Otto Iskandar Dinata",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 0.75
+    },
+    {
+      "segment_id": "35",
+      "from_node": "Kampung Melayu",
+      "to_node": "Tebet",
+      "road_name": "Jalan Otto Iskandar Dinata",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.04
+    },
+    {
+      "segment_id": "36",
+      "from_node": "Tebet",
+      "to_node": "Manggarai",
+      "road_name": "Jalan Jatinegara Barat Raya",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.93
+    },
+    {
+      "segment_id": "37",
+      "from_node": "Manggarai",
+      "to_node": "Manggarai Timur",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.47
+    },
+    {
+      "segment_id": "38",
+      "from_node": "Manggarai Timur",
+      "to_node": "Matraman",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.51
+    },
+    {
+      "segment_id": "39",
+      "from_node": "Matraman",
+      "to_node": "Matraman Utara",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.93
+    },
+    {
+      "segment_id": "40",
+      "from_node": "Matraman Utara",
+      "to_node": "Salemba Selatan",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.78
+    },
+    {
+      "segment_id": "41",
+      "from_node": "Salemba Selatan",
+      "to_node": "Salemba",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.45
+    },
+    {
+      "segment_id": "42",
+      "from_node": "Salemba",
+      "to_node": "Salemba Timur",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.72
+    },
+    {
+      "segment_id": "43",
+      "from_node": "Salemba Timur",
+      "to_node": "Pramuka Barat",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.6
+    },
+    {
+      "segment_id": "44",
+      "from_node": "Pramuka Barat",
+      "to_node": "Pramuka",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.61
+    },
+    {
+      "segment_id": "45",
+      "from_node": "Pramuka",
+      "to_node": "Pramuka Utara",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.78
+    },
+    {
+      "segment_id": "46",
+      "from_node": "Pramuka Utara",
+      "to_node": "Suprapto Timur",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.05
+    },
+    {
+      "segment_id": "47",
+      "from_node": "Suprapto Timur",
+      "to_node": "Suprapto",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.68
+    },
+    {
+      "segment_id": "48",
+      "from_node": "Suprapto",
+      "to_node": "Senen Timur",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.71
+    },
+    {
+      "segment_id": "49",
+      "from_node": "Senen Timur",
+      "to_node": "Senen",
+      "road_name": "new_row",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.54
+    },
+    {
+      "segment_id": "50",
+      "from_node": "Senen",
+      "to_node": "Gunung Sahari Selatan",
+      "road_name": "Jalan Gunung Sahari Raya",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.19
+    },
+    {
+      "segment_id": "51",
+      "from_node": "Gunung Sahari Selatan",
+      "to_node": "Gunung Sahari",
+      "road_name": "Jalan Gunung Sahari Raya",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.18
+    },
+    {
+      "segment_id": "52",
+      "from_node": "Gunung Sahari",
+      "to_node": "Kemayoran Utara",
+      "road_name": "Jalan Gunung Sahari Raya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.1
+    },
+    {
+      "segment_id": "53",
+      "from_node": "Kemayoran Utara",
+      "to_node": "Ancol",
+      "road_name": "Jalan Gunung Sahari Raya",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.38
+    }
+  ],
+  "branch": [
+    {
+      "segment_id": "01",
+      "from_node": "Sawangan",
+      "to_node": "Limo",
+      "road_name": "Jalan Raya Limo",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 7.15
+    },
+    {
+      "segment_id": "02",
+      "from_node": "Limo",
+      "to_node": "Cinere",
+      "road_name": "Jalan Raya Limo",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.66
+    },
+    {
+      "segment_id": "03",
+      "from_node": "Cinere",
+      "to_node": "Krukut",
+      "road_name": "Jalan Cinere Raya",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.69
+    },
+    {
+      "segment_id": "04",
+      "from_node": "Krukut",
+      "to_node": "Andara",
+      "road_name": "Jalan Cinere Raya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.19
+    },
+    {
+      "segment_id": "05",
+      "from_node": "Andara",
+      "to_node": "Cilandak",
+      "road_name": "Jalan Andara",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 4.0
+    },
+    {
+      "segment_id": "06",
+      "from_node": "Cilandak",
+      "to_node": "Fatmawati",
+      "road_name": "Jalan Tahi Bonar Simatupang",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.84
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "Graha Cijantung": {
+    "lon": 106.8619111,
+    "lat": -6.312151,
+    "display": "Mall Graha Cijantung, Jalan Pendidikan I, RW 04, Cijantung, Pasar Rebo, Jakarta Timur, Daerah Khusus Ibukota Jakarta, 13770, Indonesia"
+  },
+  "Condet": {
+    "lon": 106.8517227,
+    "lat": -6.2764268,
+    "display": "Perkebunan Salak Condet, 6, Bale Kambang, Kramat Jati, Jakarta Timur, Daerah Khusus Ibukota Jakarta, 13530, Indonesia"
+  },
+  "PGC": {
+    "lon": 106.8654261,
+    "lat": -6.2620275,
+    "display": "PGC, Transjakarta Busway Koridor 10, RW 13, Cililitan, Kramat Jati, Jakarta Timur, Daerah Khusus Ibukota Jakarta, 13640, Indonesia"
+  },
+  "Otista": {
+    "lon": 106.8688164,
+    "lat": -6.2438229,
+    "display": "Jalan Otto Iskandar Dinata, RW 12, Bidara Cina, Jatinegara, Jakarta Timur, Daerah Khusus Ibukota Jakarta, 13340, Indonesia"
+  },
+  "Jatinegara Barat": {
+    "lon": 106.8655716,
+    "lat": -6.2246662,
+    "display": "Jalan K. Haji Abdul Syafi'ie, RW 01, Kampung Melayu, Jatinegara, Jakarta Timur, Daerah Khusus Ibukota Jakarta, 13320, Indonesia"
+  },
+  "Matraman": {
+    "lon": 106.8597528,
+    "lat": -6.2125672,
+    "display": "Matraman, Jalan Permata I, RW 06, Kampung Melayu, Jatinegara, Jakarta Timur, Daerah Khusus Ibukota Jakarta, 13110, Indonesia"
+  },
+  "Pramuka": {
+    "lon": 106.8740181,
+    "lat": -6.1921766,
+    "display": "Halte Simpang Pramuka, Jalan Pramuka, RW 09, Rawasari, Cempaka Putih, Jakarta Pusat, Daerah Khusus Ibukota Jakarta, 10570, Indonesia"
+  },
+  "Kramat Raya": {
+    "lon": 106.7040006,
+    "lat": -6.1607793,
+    "display": "Jalan Kramat Raya, RW 06, Semanan, Kalideres, Jakarta Barat, Daerah Khusus Ibukota Jakarta, 11850, Indonesia"
+  },
+  "Senen": {
+    "lon": 106.8445744,
+    "lat": -6.1744233,
+    "display": "Pasar Senen, Jalan Bungur Besar Raya, RW 04, Senen, Jakarta Pusat, Daerah Khusus Ibukota Jakarta, 10460, Indonesia"
+  },
+  "Gunung Sahari": {
+    "lon": 106.8350871,
+    "lat": -6.1504056,
+    "display": "Jalan Gunung Sahari Raya, RW 03, Gunung Sahari Utara, Sawah Besar, Jakarta Pusat, Daerah Khusus Ibukota Jakarta, 10720, Indonesia"
+  },
+  "Ancol": {
+    "lon": 106.8451374,
+    "lat": -6.128115,
+    "display": "Ancol, Laksamana RE Martadinata, RW 10, Ancol, Pademangan, Jakarta Utara, Daerah Khusus Ibukota Jakarta, 14430, Indonesia"
+  },
+  "Margonda": {
+    "lon": 106.8446648,
+    "lat": -6.3788621,
+    "display": "Margonda, Jalan Tol Cinere–Jagorawi, Mekar Jaya, Depok, Jawa Barat, 16418, Indonesia"
+  }
+}

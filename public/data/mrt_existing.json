@@ -1,0 +1,199 @@
+{
+  "corridors": [
+    {
+      "id": "mrt-NS",
+      "line_code": "NS",
+      "filter_key": "NS",
+      "name": "MRT North-South Line",
+      "short": "Utara-Selatan",
+      "endpoint": "Lebak Bulus - Bundaran HI",
+      "from_name": "Lebak Bulus",
+      "to_name": "Bundaran HI",
+      "branch": "",
+      "stations": [
+        "Lebak Bulus",
+        "Fatmawati",
+        "Cipete Raya",
+        "Haji Nawi",
+        "Blok A",
+        "Blok M",
+        "ASEAN",
+        "Senayan",
+        "Istora",
+        "Bendungan Hilir",
+        "Setiabudi",
+        "Dukuh Atas",
+        "Bundaran HI"
+      ],
+      "stop_count": 13,
+      "length_km": 15.15,
+      "source": "OpenStreetMap route relations",
+      "source_type": "osm",
+      "bbox": [
+        106.771351,
+        -6.292485,
+        106.82319,
+        -6.191026
+      ]
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "mrt-s13",
+        "name": "Lebak Bulus",
+        "type": "terminus"
+      },
+      {
+        "id": "mrt-s12",
+        "name": "Fatmawati",
+        "type": "intermediate"
+      },
+      {
+        "id": "mrt-s11",
+        "name": "Cipete Raya",
+        "type": "intermediate"
+      },
+      {
+        "id": "mrt-s10",
+        "name": "Haji Nawi",
+        "type": "intermediate"
+      },
+      {
+        "id": "mrt-s09",
+        "name": "Blok A",
+        "type": "intermediate"
+      },
+      {
+        "id": "mrt-s08",
+        "name": "Blok M",
+        "type": "interchange"
+      },
+      {
+        "id": "mrt-s07",
+        "name": "ASEAN",
+        "type": "intermediate"
+      },
+      {
+        "id": "mrt-s06",
+        "name": "Senayan",
+        "type": "interchange"
+      },
+      {
+        "id": "mrt-s05",
+        "name": "Istora",
+        "type": "interchange"
+      },
+      {
+        "id": "mrt-s04",
+        "name": "Bendungan Hilir",
+        "type": "interchange"
+      },
+      {
+        "id": "mrt-s03",
+        "name": "Setiabudi",
+        "type": "intermediate"
+      },
+      {
+        "id": "mrt-s02",
+        "name": "Dukuh Atas",
+        "type": "interchange"
+      },
+      {
+        "id": "mrt-s01",
+        "name": "Bundaran HI",
+        "type": "terminus"
+      }
+    ],
+    "edges": [
+      {
+        "id": "mrt-e-01",
+        "from": "Lebak Bulus",
+        "to": "Fatmawati",
+        "length_km": 2.011
+      },
+      {
+        "id": "mrt-e-02",
+        "from": "Fatmawati",
+        "to": "Cipete Raya",
+        "length_km": 1.825
+      },
+      {
+        "id": "mrt-e-03",
+        "from": "Cipete Raya",
+        "to": "Haji Nawi",
+        "length_km": 1.306
+      },
+      {
+        "id": "mrt-e-04",
+        "from": "Haji Nawi",
+        "to": "Blok A",
+        "length_km": 1.227
+      },
+      {
+        "id": "mrt-e-05",
+        "from": "Blok A",
+        "to": "Blok M",
+        "length_km": 1.271
+      },
+      {
+        "id": "mrt-e-06",
+        "from": "Blok M",
+        "to": "ASEAN",
+        "length_km": 0.631
+      },
+      {
+        "id": "mrt-e-07",
+        "from": "ASEAN",
+        "to": "Senayan",
+        "length_km": 1.516
+      },
+      {
+        "id": "mrt-e-08",
+        "from": "Senayan",
+        "to": "Istora",
+        "length_km": 0.834
+      },
+      {
+        "id": "mrt-e-09",
+        "from": "Istora",
+        "to": "Bendungan Hilir",
+        "length_km": 1.318
+      },
+      {
+        "id": "mrt-e-10",
+        "from": "Bendungan Hilir",
+        "to": "Setiabudi",
+        "length_km": 0.791
+      },
+      {
+        "id": "mrt-e-11",
+        "from": "Setiabudi",
+        "to": "Dukuh Atas",
+        "length_km": 0.932
+      },
+      {
+        "id": "mrt-e-12",
+        "from": "Dukuh Atas",
+        "to": "Bundaran HI",
+        "length_km": 0.999
+      }
+    ]
+  },
+  "stats": {
+    "total_stations": 13,
+    "total_edges": 12,
+    "terminus": 2,
+    "interchange": 7,
+    "network_km": 15.15,
+    "profile": {
+      "elevated_km": 9.23,
+      "underground_km": 5.55,
+      "other_km": 0.37
+    }
+  },
+  "color": "#247A67",
+  "crs": "EPSG:4326",
+  "source": "OpenStreetMap route relations",
+  "source_type": "osm"
+}

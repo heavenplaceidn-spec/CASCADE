@@ -1,0 +1,330 @@
+{
+  "reports": [
+    {
+      "id": "CAS-TJ06",
+      "name": "Monas – Puri Indah",
+      "direction": "Monas → Puri Indah",
+      "km": 17.55,
+      "stops": 14,
+      "vertices": 411,
+      "conf": "HIGH",
+      "method": "ROAD_REFERENCE",
+      "roads": [
+        "Jalan Mohammad Husni Thamrin",
+        "Jalan Kebon Sirih",
+        "Jalan Jatibaru",
+        "Jalan Aipda Karel Satsuit Tubun",
+        "Jalan Letnan Jenderal Siswondo Parman",
+        "Jalan Kemanggisan Utama",
+        "Jalan Budi Raya",
+        "Jalan Arjuna Utara",
+        "Jalan Panjang Raya",
+        "Jalan Lapangan Bola",
+        "Jalan Meruya Ilir",
+        "Jalan Kembang Kerep",
+        "Jalan Puri Lingkar Luar"
+      ],
+      "stop_table": [
+        {
+          "sequence": 1,
+          "name": "Monas",
+          "road": "Jalan Mohammad Husni Thamrin",
+          "distance_from_previous_km": 0.0
+        },
+        {
+          "sequence": 2,
+          "name": "Tanah Abang",
+          "road": "Jalan Jatibaru",
+          "distance_from_previous_km": 1.29
+        },
+        {
+          "sequence": 3,
+          "name": "Kebon Sirih",
+          "road": "Jalan Aipda Karel Satsuit Tubun",
+          "distance_from_previous_km": 1.29
+        },
+        {
+          "sequence": 4,
+          "name": "Petamburan",
+          "road": "Jalan Aipda Karel Satsuit Tubun",
+          "distance_from_previous_km": 1.65
+        },
+        {
+          "sequence": 5,
+          "name": "Slipi",
+          "road": "Jalan Letnan Jenderal Siswondo Parman",
+          "distance_from_previous_km": 0.93
+        },
+        {
+          "sequence": 6,
+          "name": "Kemanggisan",
+          "road": "Jalan Kemanggisan Utama",
+          "distance_from_previous_km": 1.82
+        },
+        {
+          "sequence": 7,
+          "name": "Tanjung Duren",
+          "road": "Jalan Arjuna Utara",
+          "distance_from_previous_km": 1.7
+        },
+        {
+          "sequence": 8,
+          "name": "Duri Kepa",
+          "road": "Jalan Panjang Raya",
+          "distance_from_previous_km": 1.25
+        },
+        {
+          "sequence": 9,
+          "name": "Kebon Jeruk",
+          "road": "Jalan Lapangan Bola",
+          "distance_from_previous_km": 1.25
+        },
+        {
+          "sequence": 10,
+          "name": "Kedoya",
+          "road": "Jalan Meruya Ilir",
+          "distance_from_previous_km": 0.91
+        },
+        {
+          "sequence": 11,
+          "name": "Meruya Ilir",
+          "road": "Jalan Meruya Ilir",
+          "distance_from_previous_km": 1.36
+        },
+        {
+          "sequence": 12,
+          "name": "Kembangan Selatan",
+          "road": "Jalan Kembang Kerep",
+          "distance_from_previous_km": 1.18
+        },
+        {
+          "sequence": 13,
+          "name": "Puri Kencana",
+          "road": "Jalan Kembang Kerep",
+          "distance_from_previous_km": 0.96
+        },
+        {
+          "sequence": 14,
+          "name": "Puri Indah",
+          "road": "Jalan Puri Lingkar Luar",
+          "distance_from_previous_km": 1.94
+        }
+      ],
+      "max_gap": 1.94,
+      "min_gap": 0.91,
+      "mean_gap": 1.35,
+      "offroad": {
+        "max": 132.5,
+        "p90": 14.7,
+        "n80": 4,
+        "n40": 6
+      },
+      "warnings": [
+        "off Thamrin Kebon Sirih–Kebon Sirih Barat snap 0/132m on Jalan Kebon Sirih L=659",
+        "off Kemanggisan–Kemanggisan Barat snap 260/1m on Jalan Kemanggisan Utama L=1275",
+        "off Budi Arjuna–Arjuna Panjang snap 152/0m on Jalan Arjuna Utara L=1743",
+        "off Kebon Jeruk–Meruya Ilir Timur snap 278/0m on Jalan Lapangan Bola L=522",
+        "off Meruya Ilir Barat–Puri Lingkar snap 28/264m on Jalan Kembang Kerep L=1095",
+        "off Puri Lingkar–Puri Indah snap 0/141m on Jalan Puri Lingkar Luar L=817"
+      ]
+    },
+    {
+      "id": "CAS-TJ07",
+      "name": "Monas – Puri Beta",
+      "direction": "Monas → Puri Beta",
+      "km": 19.25,
+      "stops": 17,
+      "vertices": 707,
+      "conf": "HIGH",
+      "method": "ROAD_REFERENCE",
+      "roads": [
+        "Jalan Mohammad Husni Thamrin",
+        "Jalan Kebon Sirih",
+        "Jalan Jatibaru",
+        "Jalan Aipda Karel Satsuit Tubun",
+        "Jalan Palmerah Utara",
+        "Jalan Palmerah Barat",
+        "Jalan Bang Pitung",
+        "Jalan Arteri Pos Pengumben",
+        "Jalan Penghubung Pengumben Joglo",
+        "Jalan Joglo Raya",
+        "Jalan Penghubung Joglo Ciledug",
+        "Jalan Ciledug Raya"
+      ],
+      "stop_table": [
+        {
+          "sequence": 1,
+          "name": "Monas",
+          "road": "Jalan Mohammad Husni Thamrin",
+          "distance_from_previous_km": 0.0
+        },
+        {
+          "sequence": 2,
+          "name": "Tanah Abang",
+          "road": "Jalan Jatibaru",
+          "distance_from_previous_km": 1.32
+        },
+        {
+          "sequence": 3,
+          "name": "Kebon Sirih",
+          "road": "Jalan Aipda Karel Satsuit Tubun",
+          "distance_from_previous_km": 1.32
+        },
+        {
+          "sequence": 4,
+          "name": "Petamburan",
+          "road": "Jalan Aipda Karel Satsuit Tubun",
+          "distance_from_previous_km": 1.6
+        },
+        {
+          "sequence": 5,
+          "name": "Slipi",
+          "road": "Jalan Palmerah Utara",
+          "distance_from_previous_km": 1.02
+        },
+        {
+          "sequence": 6,
+          "name": "Palmerah Utara",
+          "road": "Jalan Palmerah Barat",
+          "distance_from_previous_km": 1.12
+        },
+        {
+          "sequence": 7,
+          "name": "Palmerah Barat",
+          "road": "Jalan Palmerah Barat",
+          "distance_from_previous_km": 1.15
+        },
+        {
+          "sequence": 8,
+          "name": "Permata Hijau",
+          "road": "Jalan Bang Pitung",
+          "distance_from_previous_km": 1.15
+        },
+        {
+          "sequence": 9,
+          "name": "Kebayoran Lama",
+          "road": "Jalan Bang Pitung",
+          "distance_from_previous_km": 0.93
+        },
+        {
+          "sequence": 10,
+          "name": "Kelapa Dua",
+          "road": "Jalan Arteri Pos Pengumben",
+          "distance_from_previous_km": 0.93
+        },
+        {
+          "sequence": 11,
+          "name": "Pos Pengumben",
+          "road": "Jalan Penghubung Pengumben Joglo",
+          "distance_from_previous_km": 1.24
+        },
+        {
+          "sequence": 12,
+          "name": "Joglo Timur",
+          "road": "Jalan Joglo Raya",
+          "distance_from_previous_km": 1.24
+        },
+        {
+          "sequence": 13,
+          "name": "Joglo",
+          "road": "Jalan Joglo Raya",
+          "distance_from_previous_km": 1.72
+        },
+        {
+          "sequence": 14,
+          "name": "Gang Jengkol",
+          "road": "Jalan Joglo Raya",
+          "distance_from_previous_km": 0.93
+        },
+        {
+          "sequence": 15,
+          "name": "Joglo Barat",
+          "road": "Jalan Joglo Raya",
+          "distance_from_previous_km": 0.93
+        },
+        {
+          "sequence": 16,
+          "name": "Ciledug Raya",
+          "road": "Jalan Penghubung Joglo Ciledug",
+          "distance_from_previous_km": 1.32
+        },
+        {
+          "sequence": 17,
+          "name": "Puri Beta",
+          "road": "Jalan Ciledug Raya",
+          "distance_from_previous_km": 1.32
+        }
+      ],
+      "max_gap": 1.72,
+      "min_gap": 0.93,
+      "mean_gap": 1.2,
+      "offroad": {
+        "max": 85.1,
+        "p90": 0.0,
+        "n80": 1,
+        "n40": 1
+      },
+      "warnings": [
+        "off Thamrin Kebon Sirih–Kebon Sirih Barat snap 0/132m on Jalan Kebon Sirih L=659",
+        "off Tubun Tengah–Tubun Barat snap 0/96m on Jalan Aipda Karel Satsuit Tubun L=1622",
+        "off Kebayoran Lama–Pos Pengumben snap 173/84m on Jalan Arteri Pos Pengumben L=434",
+        "off Pos Pengumben–Joglo Timur snap 96/59m on Jalan Penghubung Pengumben Joglo L=1669"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "route": "CAS-TJ06",
+      "issue": "off Thamrin Kebon Sirih–Kebon Sirih Barat snap 0/132m on Jalan Kebon Sirih L=659"
+    },
+    {
+      "route": "CAS-TJ06",
+      "issue": "off Kemanggisan–Kemanggisan Barat snap 260/1m on Jalan Kemanggisan Utama L=1275"
+    },
+    {
+      "route": "CAS-TJ06",
+      "issue": "off Budi Arjuna–Arjuna Panjang snap 152/0m on Jalan Arjuna Utara L=1743"
+    },
+    {
+      "route": "CAS-TJ06",
+      "issue": "off Kebon Jeruk–Meruya Ilir Timur snap 278/0m on Jalan Lapangan Bola L=522"
+    },
+    {
+      "route": "CAS-TJ06",
+      "issue": "off Meruya Ilir Barat–Puri Lingkar snap 28/264m on Jalan Kembang Kerep L=1095"
+    },
+    {
+      "route": "CAS-TJ06",
+      "issue": "off Puri Lingkar–Puri Indah snap 0/141m on Jalan Puri Lingkar Luar L=817"
+    },
+    {
+      "route": "CAS-TJ07",
+      "issue": "off Thamrin Kebon Sirih–Kebon Sirih Barat snap 0/132m on Jalan Kebon Sirih L=659"
+    },
+    {
+      "route": "CAS-TJ07",
+      "issue": "off Tubun Tengah–Tubun Barat snap 0/96m on Jalan Aipda Karel Satsuit Tubun L=1622"
+    },
+    {
+      "route": "CAS-TJ07",
+      "issue": "off Kebayoran Lama–Pos Pengumben snap 173/84m on Jalan Arteri Pos Pengumben L=434"
+    },
+    {
+      "route": "CAS-TJ07",
+      "issue": "off Pos Pengumben–Joglo Timur snap 96/59m on Jalan Penghubung Pengumben Joglo L=1669"
+    }
+  ],
+  "hashes": {
+    "CAS-TJ01": "68374d307e0f",
+    "CAS-TJ02": "627e12003339",
+    "CAS-TJ03": "c4de9e575e0e",
+    "CAS-TJ04": "e4ddbcd469e9",
+    "CAS-TJ05": "8ac52cb52ef2",
+    "CAS-TJ06": "67629eef1ee9",
+    "CAS-TJ07": "86db51d43844",
+    "CAS-TJ08": "7a9c59880e8c",
+    "CAS-TJ09": "482d51c48305",
+    "CAS-TJ10": "7aa00eed8a6b",
+    "CAS-TJ11": "4a87154787ef"
+  }
+}

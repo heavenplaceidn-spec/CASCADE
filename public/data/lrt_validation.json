@@ -1,0 +1,115 @@
+{
+  "unique_stations": 18,
+  "expected_stations": 18,
+  "station_names": [
+    "Harjamukti",
+    "Ciracas",
+    "Kampung Rambutan",
+    "TMII",
+    "Cawang",
+    "Ciliwung",
+    "Cikoko",
+    "Pancoran",
+    "Kuningan",
+    "Rasuna Said",
+    "Setiabudi",
+    "Dukuh Atas BNI",
+    "Jatimulya",
+    "Bekasi Barat",
+    "Cikunir 2",
+    "Cikunir 1",
+    "Jatibening Baru",
+    "Halim"
+  ],
+  "cibubur_sequence": [
+    "Harjamukti",
+    "Ciracas",
+    "Kampung Rambutan",
+    "TMII",
+    "Cawang",
+    "Ciliwung",
+    "Cikoko",
+    "Pancoran",
+    "Kuningan",
+    "Rasuna Said",
+    "Setiabudi",
+    "Dukuh Atas BNI"
+  ],
+  "bekasi_sequence": [
+    "Jatimulya",
+    "Bekasi Barat",
+    "Cikunir 2",
+    "Cikunir 1",
+    "Jatibening Baru",
+    "Halim",
+    "Cawang",
+    "Ciliwung",
+    "Cikoko",
+    "Pancoran",
+    "Kuningan",
+    "Rasuna Said",
+    "Setiabudi",
+    "Dukuh Atas BNI"
+  ],
+  "shared_trunk": [
+    "Cawang",
+    "Ciliwung",
+    "Cikoko",
+    "Pancoran",
+    "Kuningan",
+    "Rasuna Said",
+    "Setiabudi",
+    "Dukuh Atas BNI"
+  ],
+  "cawang_merge": true,
+  "missing": [],
+  "far_from_rail": [],
+  "edges": 17,
+  "stats": {
+    "unique_stations": 18,
+    "total_edges": 17,
+    "cibubur_branch_km": 14.66,
+    "bekasi_branch_km": 17.47,
+    "shared_trunk_km": 9.8,
+    "harjamukti_dukuh_atas_km": 24.46,
+    "jatimulya_dukuh_atas_km": 27.28,
+    "network_km": 41.94,
+    "profile": {
+      "elevated_km": 41.25,
+      "underground_km": 0.0,
+      "other_km": 0.69
+    }
+  },
+  "max_jump_m": {
+    "network": 994.7,
+    "cibubur": 623.3,
+    "bekasi": 994.7,
+    "shared": 366.7
+  },
+  "shared_way_count": 16,
+  "cibubur_unique_ways": 3,
+  "bekasi_unique_ways": 3,
+  "excluded": "LRT Jakarta Kelapa Gading–Velodrome (OSM rel 10693119/10693160/10693161) tidak dimasukkan.",
+  "issues": [
+    {
+      "part": "bekasi",
+      "issue": "max vertex jump 995 m"
+    },
+    {
+      "part": "bk_branch",
+      "issue": "max vertex jump 995 m"
+    },
+    {
+      "part": "lrt_net",
+      "issue": "max vertex jump 995 m"
+    }
+  ],
+  "crs": "EPSG:4326",
+  "color": "#4FAF86",
+  "notes": [
+    "MRT&LRT.txt tidak ada di disk; urutan stasiun dari dokumen PASS 15.",
+    "Geometri: OSM light_rail relation ways, bukan garis lurus antarstasiun.",
+    "Shared trunk digambar sekali (union unique ways saat filter semua).",
+    "Bukan data resmi operator LRT Jabodebek."
+  ]
+}

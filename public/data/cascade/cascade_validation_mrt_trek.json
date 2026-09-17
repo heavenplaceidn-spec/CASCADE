@@ -1,0 +1,175 @@
+{
+  "source": "TREKMRT.geojson",
+  "gap_m": 2000.0,
+  "corridors": [
+    {
+      "id": "CAS-MRT-C01",
+      "name": "Lebak Bulus – Ancol",
+      "short": "Lebak Bulus – Ancol",
+      "endpoint": "Lebak Bulus – Ancol",
+      "from_name": "Lebak Bulus",
+      "to_name": "Ancol",
+      "direction": "Lebak Bulus → Ancol",
+      "mode": "mrt",
+      "branch_id": "MAIN",
+      "length_km": 58.65,
+      "stop_count": 30,
+      "geometry_confidence": "MEDIUM",
+      "source": "TREKMRT.geojson digitasi pengguna — usulan CASCADE, bukan masterplan, bukan MRT existing",
+      "status": "PROPOSED",
+      "network_type": "MRT",
+      "plan_type": "NEW_TRUNK",
+      "alignment_type": "VIADUCT",
+      "road_backbone": "Digitasi TREKMRT",
+      "notes": "CAS-MRT-C01 mainline usulan CASCADE dari trase TREKMRT (digitasi pengguna). Lebak Bulus–Ciputat–Pamulang/Bojongsari–Sawangan–Depok Baru–Margonda–Kelapa Dua–Cijantung–Condet–PGC–Kampung Melayu–Matraman–Senen–Gunung Sahari–Ancol. Stasiun dipasang interval 2 km; nama = wilayah setempat terdekat. Bukan MRT existing. Bukan masterplan. Bukan DED.",
+      "bbox": [
+        106.74214209849646,
+        -6.407296766810447,
+        106.86955834617844,
+        -6.125479599797174
+      ]
+    },
+    {
+      "id": "CAS-MRT-C01-E",
+      "name": "Kelapa Dua – Cibubur",
+      "short": "Kelapa Dua – Cibubur",
+      "endpoint": "Kelapa Dua – Cibubur",
+      "from_name": "Kelapa Dua",
+      "to_name": "Cibubur",
+      "direction": "Kelapa Dua → Cibubur",
+      "mode": "mrt",
+      "branch_id": "E",
+      "length_km": 7.86,
+      "stop_count": 5,
+      "geometry_confidence": "MEDIUM",
+      "source": "TREKMRT.geojson digitasi pengguna — usulan CASCADE, bukan masterplan, bukan MRT existing",
+      "status": "PROPOSED",
+      "network_type": "BRANCH",
+      "plan_type": "NEW_TRUNK",
+      "alignment_type": "VIADUCT",
+      "road_backbone": "Digitasi TREKMRT",
+      "notes": "CAS-MRT-C01-E cabang timur usulan CASCADE dari trase TREKMRT: Kelapa Dua – Cimanggis – Cibubur. Bukan mainline Lebak Bulus–Ancol. Stasiun interval 2 km, nama wilayah setempat. Bukan masterplan.",
+      "bbox": [
+        106.84292794071436,
+        -6.374520990031101,
+        106.89577905309694,
+        -6.354976672127564
+      ]
+    },
+    {
+      "id": "CAS-MRT-C01-BR02",
+      "name": "Ciputat – Pamulang – BSD – ICE",
+      "short": "Ciputat – ICE BSD",
+      "endpoint": "Ciputat – ICE BSD",
+      "from_name": "Ciputat",
+      "to_name": "ICE BSD",
+      "direction": "Ciputat → ICE BSD",
+      "mode": "mrt",
+      "branch_id": "BR02",
+      "length_km": 17.79,
+      "stop_count": 10,
+      "geometry_confidence": "MEDIUM",
+      "source": "TREKMRT.geojson digitasi pengguna — usulan CASCADE, bukan masterplan, bukan MRT existing",
+      "status": "PROPOSED",
+      "network_type": "BRANCH",
+      "plan_type": "NEW_TRUNK",
+      "alignment_type": "VIADUCT",
+      "road_backbone": "Digitasi TREKMRT",
+      "notes": "CAS-MRT-C01-BR02 cabang Ciputat–Pamulang–Serpong–ICE BSD dari trase TREKMRT. Ciputat = node cabang mainline. Stasiun interval 2 km. Bukan masterplan. Bukan MRT existing.",
+      "bbox": [
+        106.64145868091488,
+        -6.347087479165048,
+        106.74675120713438,
+        -6.298833533029376
+      ]
+    }
+  ],
+  "stops": {
+    "CAS-MRT-C01": [
+      "Lebak Bulus",
+      "Cempaka Putih",
+      "Ciputat",
+      "Cipayung",
+      "Pondok Cabe",
+      "Kedaung",
+      "Bojongsari Baru",
+      "Parung Bingung",
+      "Sawangan Lama",
+      "Rangkapan Jaya Baru",
+      "Rangkapan Jaya",
+      "Pancoran Mas",
+      "Depok Baru",
+      "Kemirimuka",
+      "Pondok Cina",
+      "Jasin",
+      "Kalisari",
+      "Cijantung",
+      "Gedong",
+      "Condet",
+      "Batu Ampar",
+      "PGC",
+      "Cipinang Cempedak",
+      "Kampung Melayu",
+      "Matraman",
+      "Kenari",
+      "Senen",
+      "Kartini",
+      "Mangga Dua Selatan",
+      "Ancol"
+    ],
+    "CAS-MRT-C01-E": [
+      "Kelapa Dua",
+      "Jatijajar",
+      "Cimanggis",
+      "Harjamukti",
+      "Cibubur"
+    ],
+    "CAS-MRT-C01-BR02": [
+      "Ciputat",
+      "Pamulang Barat",
+      "Benda Baru",
+      "Pondok Benda",
+      "Buaran",
+      "Setu",
+      "Ciater",
+      "Cilenggang",
+      "BSD City",
+      "ICE BSD"
+    ]
+  },
+  "km": {
+    "CAS-MRT-C01": 58.65,
+    "CAS-MRT-C01-E": 7.86,
+    "CAS-MRT-C01-BR02": 17.79
+  },
+  "tj_frozen": {
+    "CAS-TJ01": "68374d307e0f",
+    "CAS-TJ02": "627e12003339",
+    "CAS-TJ03": "c4de9e575e0e",
+    "CAS-TJ04": "e4ddbcd469e9",
+    "CAS-TJ05": "8ac52cb52ef2",
+    "CAS-TJ06": "e2c8cffa534c",
+    "CAS-TJ07": "86db51d43844",
+    "CAS-TJ08": "7a9c59880e8c",
+    "CAS-TJ09": "482d51c48305",
+    "CAS-TJ10": "7aa00eed8a6b",
+    "CAS-TJ11": "4a87154787ef"
+  },
+  "lrt_frozen": {
+    "CAS-LRT-C02": "df511bac7ab9",
+    "CAS-LRT-C04": "e09a32724f56"
+  },
+  "frozen_other": {
+    "CAS-MRT-C01-A": "ae3767b7fef3",
+    "KRL-C03-N": "711afcad81d6",
+    "KRL-C03-S": "c6ce84ce0d82"
+  },
+  "masterplan_untouched": true,
+  "existing_untouched": true,
+  "hashes": {
+    "CAS-MRT-C01": "7f4818d71be3",
+    "CAS-MRT-C01-E": "8e91302068d2",
+    "CAS-MRT-C01-BR02": "ea815685e1c9",
+    "CAS-MRT-C01-A": "ae3767b7fef3"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "lines": {
+    "B": {
+      "geom": "LineString",
+      "length_km": 55.02,
+      "max_jump_m": 621.4,
+      "stations_expected": 24
+    },
+    "B-nambo": {
+      "geom": "LineString",
+      "length_km": 13.07,
+      "max_jump_m": 605.5,
+      "stations_expected": 4
+    },
+    "R": {
+      "geom": "LineString",
+      "length_km": 72.86,
+      "max_jump_m": 995.1,
+      "stations_expected": 20
+    },
+    "C": {
+      "geom": "MultiLineString",
+      "length_km": 122.57,
+      "max_jump_m": 900.4,
+      "stations_expected": 26
+    },
+    "T": {
+      "geom": "LineString",
+      "length_km": 19.76,
+      "max_jump_m": 810.6,
+      "stations_expected": 11
+    },
+    "TP": {
+      "geom": "LineString",
+      "length_km": 8.1,
+      "max_jump_m": 434.2,
+      "stations_expected": 4
+    }
+  },
+  "stations": {
+    "expected": 83,
+    "built": 83,
+    "missing": [],
+    "far_from_rail": []
+  },
+  "network_km": 291.73,
+  "issues": [
+    {
+      "line": "R",
+      "issue": "max vertex jump 995 m"
+    },
+    {
+      "line": "C",
+      "issue": "max vertex jump 900 m"
+    },
+    {
+      "line": "T",
+      "issue": "max vertex jump 811 m"
+    }
+  ],
+  "crs": "EPSG:4326",
+  "color": "#D83A72",
+  "notes": [
+    "KRL.txt tidak ada di disk; struktur stasiun/branch/loop dari dokumen PASS 14.",
+    "Geometri rel: OSM relation ways, bukan garis lurus antarstasiun.",
+    "Cabang Nambo: ways unik rel 16877211 vs Bogor (Citayam–Nambo).",
+    "Cikarang: ways unik rel via Manggarai + via Pasar Senen (loop, tidak flatten).",
+    "Jatake ada di rel Green OSM. Cikoya dan Pondok Rajeg dan Karet ditambah dari OSM/Nominatim.",
+    "BNI City, JIS, Gunung Putri tidak dirender sebagai stasiun KRL aktif."
+  ]
+}

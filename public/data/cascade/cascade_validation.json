@@ -1,0 +1,731 @@
+{
+  "reports": [
+    {
+      "id": "CAS-TJ06",
+      "name": "Puri Beta – Monas",
+      "km": 16.47,
+      "stops": 14,
+      "vertices": 336,
+      "conf": "MEDIUM",
+      "method": "ROAD_REFERENCE",
+      "roads": [
+        "TJ-K13",
+        "Jalan Ciledug Raya",
+        "Jalan Joglo Raya",
+        "Jalan Raya Pos Pengumben",
+        "Jalan Kelapa Dua Raya",
+        "Jalan Arteri Pos Pengumben",
+        "Jalan Letnan Jenderal Siswondo Parman",
+        "Jalan Aipda Karel Satsuit Tubun",
+        "Jalan Mohammad Husni Thamrin"
+      ],
+      "stop_table": [
+        {
+          "sequence": 1,
+          "name": "Puri Beta",
+          "road": "TJ-K13",
+          "distance_from_previous_km": 0.0
+        },
+        {
+          "sequence": 2,
+          "name": "Simpang Joglo",
+          "road": "Jalan Joglo Raya",
+          "distance_from_previous_km": 1.79
+        },
+        {
+          "sequence": 3,
+          "name": "Joglo Raya",
+          "road": "Jalan Raya Pos Pengumben",
+          "distance_from_previous_km": 1.21
+        },
+        {
+          "sequence": 4,
+          "name": "Raya Pos Pengumben",
+          "road": "Jalan Raya Pos Pengumben",
+          "distance_from_previous_km": 1.38
+        },
+        {
+          "sequence": 5,
+          "name": "Joglo Timur",
+          "road": "Jalan Raya Pos Pengumben",
+          "distance_from_previous_km": 1.38
+        },
+        {
+          "sequence": 6,
+          "name": "Kelapa Dua Raya",
+          "road": "Jalan Kelapa Dua Raya",
+          "distance_from_previous_km": 1.02
+        },
+        {
+          "sequence": 7,
+          "name": "Pos Pengumben",
+          "road": "Jalan Arteri Pos Pengumben",
+          "distance_from_previous_km": 1.02
+        },
+        {
+          "sequence": 8,
+          "name": "Letnan Jenderal Siswondo Parman",
+          "road": "Jalan Letnan Jenderal Siswondo Parman",
+          "distance_from_previous_km": 1.5
+        },
+        {
+          "sequence": 9,
+          "name": "Letnan Jenderal Siswondo Parman 2",
+          "road": "Jalan Letnan Jenderal Siswondo Parman",
+          "distance_from_previous_km": 1.19
+        },
+        {
+          "sequence": 10,
+          "name": "Palmerah",
+          "road": "Jalan Aipda Karel Satsuit Tubun",
+          "distance_from_previous_km": 1.19
+        },
+        {
+          "sequence": 11,
+          "name": "Petamburan",
+          "road": "Jalan Aipda Karel Satsuit Tubun",
+          "distance_from_previous_km": 1.22
+        },
+        {
+          "sequence": 12,
+          "name": "Tanah Abang",
+          "road": "Jalan Mohammad Husni Thamrin",
+          "distance_from_previous_km": 1.23
+        },
+        {
+          "sequence": 13,
+          "name": "Mohammad Husni Thamrin",
+          "road": "Jalan Mohammad Husni Thamrin",
+          "distance_from_previous_km": 1.18
+        },
+        {
+          "sequence": 14,
+          "name": "Monas",
+          "road": "Jalan Mohammad Husni Thamrin",
+          "distance_from_previous_km": 1.18
+        }
+      ],
+      "max_gap": 1.79,
+      "min_gap": 1.02,
+      "mean_gap": 1.27,
+      "spacing_pass": true,
+      "warnings": []
+    },
+    {
+      "id": "CAS-TJ07",
+      "name": "Monas – Puri Beta via Joglo",
+      "km": 21.91,
+      "stops": 17,
+      "vertices": 410,
+      "conf": "HIGH",
+      "method": "ROAD_REFERENCE",
+      "roads": [
+        "Jalan Mohammad Husni Thamrin",
+        "Jalan Kebon Sirih",
+        "Jalan Haji Fachrudin",
+        "Jalan Jatibaru",
+        "Jalan Letnan Jenderal Siswondo Parman",
+        "Jalan Kemanggisan Utama",
+        "Jalan Kemanggisan Raya",
+        "Jalan Raya Kebayoran Lama",
+        "Jalan Arteri Pos Pengumben",
+        "Jalan Kelapa Dua Raya",
+        "Jalan Raya Pos Pengumben",
+        "Jalan Joglo Raya",
+        "Jalan Ciledug Raya",
+        "TJ-K13"
+      ],
+      "stop_table": [
+        {
+          "sequence": 1,
+          "name": "Monas",
+          "road": "Jalan Mohammad Husni Thamrin",
+          "distance_from_previous_km": 0.0
+        },
+        {
+          "sequence": 2,
+          "name": "Kebon Sirih",
+          "road": "Jalan Kebon Sirih",
+          "distance_from_previous_km": 1.61
+        },
+        {
+          "sequence": 3,
+          "name": "Haji Fachrudin",
+          "road": "Jalan Haji Fachrudin",
+          "distance_from_previous_km": 0.95
+        },
+        {
+          "sequence": 4,
+          "name": "Jatibaru",
+          "road": "Jalan Jatibaru",
+          "distance_from_previous_km": 0.95
+        },
+        {
+          "sequence": 5,
+          "name": "Slipi",
+          "road": "Jalan Letnan Jenderal Siswondo Parman",
+          "distance_from_previous_km": 1.49
+        },
+        {
+          "sequence": 6,
+          "name": "Kemanggisan Utama",
+          "road": "Jalan Kemanggisan Utama",
+          "distance_from_previous_km": 1.5
+        },
+        {
+          "sequence": 7,
+          "name": "Kemanggisan Raya",
+          "road": "Jalan Kemanggisan Raya",
+          "distance_from_previous_km": 1.5
+        },
+        {
+          "sequence": 8,
+          "name": "Budi Raya",
+          "road": "Jalan Kemanggisan Raya",
+          "distance_from_previous_km": 1.52
+        },
+        {
+          "sequence": 9,
+          "name": "Rawa Belong",
+          "road": "Jalan Raya Kebayoran Lama",
+          "distance_from_previous_km": 1.41
+        },
+        {
+          "sequence": 10,
+          "name": "Arteri Pos Pengumben",
+          "road": "Jalan Arteri Pos Pengumben",
+          "distance_from_previous_km": 1.23
+        },
+        {
+          "sequence": 11,
+          "name": "Pos Pengumben",
+          "road": "Jalan Kelapa Dua Raya",
+          "distance_from_previous_km": 1.23
+        },
+        {
+          "sequence": 12,
+          "name": "Kelapa Dua Joglo",
+          "road": "Jalan Raya Pos Pengumben",
+          "distance_from_previous_km": 1.7
+        },
+        {
+          "sequence": 13,
+          "name": "Joglo Timur",
+          "road": "Jalan Joglo Raya",
+          "distance_from_previous_km": 1.31
+        },
+        {
+          "sequence": 14,
+          "name": "Ciledug Raya",
+          "road": "Jalan Ciledug Raya",
+          "distance_from_previous_km": 1.26
+        },
+        {
+          "sequence": 15,
+          "name": "Joglo Raya",
+          "road": "Jalan Ciledug Raya",
+          "distance_from_previous_km": 1.26
+        },
+        {
+          "sequence": 16,
+          "name": "Simpang Joglo",
+          "road": "Jalan Ciledug Raya",
+          "distance_from_previous_km": 1.2
+        },
+        {
+          "sequence": 17,
+          "name": "Puri Beta",
+          "road": "Jalan Ciledug Raya",
+          "distance_from_previous_km": 1.79
+        }
+      ],
+      "max_gap": 1.79,
+      "min_gap": 0.95,
+      "mean_gap": 1.37,
+      "spacing_pass": true,
+      "warnings": []
+    },
+    {
+      "id": "CAS-TJ08",
+      "name": "Pinang Ranti – Pulo Gadung",
+      "km": 16.84,
+      "stops": 16,
+      "vertices": 337,
+      "conf": "HIGH",
+      "method": "ROAD_REFERENCE",
+      "roads": [
+        "Jalan Pondok Gede",
+        "Jalan Jati Waringin",
+        "Jalan Pahlawan Revolusi",
+        "Jalan I Gusti Ngurah Rai",
+        "Jalan Bekasi Timur"
+      ],
+      "stop_table": [
+        {
+          "sequence": 1,
+          "name": "Pinang Ranti",
+          "road": "Jalan Pondok Gede",
+          "distance_from_previous_km": 0.0
+        },
+        {
+          "sequence": 2,
+          "name": "Pondok Gede",
+          "road": "Jalan Pondok Gede",
+          "distance_from_previous_km": 1.5
+        },
+        {
+          "sequence": 3,
+          "name": "Pondok Gede 2",
+          "road": "Jalan Pondok Gede",
+          "distance_from_previous_km": 0.96
+        },
+        {
+          "sequence": 4,
+          "name": "Jatiwaringin Selatan",
+          "road": "Jalan Jati Waringin",
+          "distance_from_previous_km": 0.96
+        },
+        {
+          "sequence": 5,
+          "name": "Jati Waringin",
+          "road": "Jalan Jati Waringin",
+          "distance_from_previous_km": 0.99
+        },
+        {
+          "sequence": 6,
+          "name": "Jatiwaringin",
+          "road": "Jalan Jati Waringin",
+          "distance_from_previous_km": 0.99
+        },
+        {
+          "sequence": 7,
+          "name": "Jati Waringin 2",
+          "road": "Jalan Jati Waringin",
+          "distance_from_previous_km": 1.09
+        },
+        {
+          "sequence": 8,
+          "name": "Jatiwaringin Utara",
+          "road": "Jalan Jati Waringin",
+          "distance_from_previous_km": 1.09
+        },
+        {
+          "sequence": 9,
+          "name": "Jati Waringin 3",
+          "road": "Jalan Jati Waringin",
+          "distance_from_previous_km": 1.03
+        },
+        {
+          "sequence": 10,
+          "name": "Jati Pahlawan",
+          "road": "Jalan Jati Waringin",
+          "distance_from_previous_km": 1.03
+        },
+        {
+          "sequence": 11,
+          "name": "Pahlawan Revolusi 2",
+          "road": "Jalan Pahlawan Revolusi",
+          "distance_from_previous_km": 1.17
+        },
+        {
+          "sequence": 12,
+          "name": "Pahlawan Revolusi",
+          "road": "Jalan Pahlawan Revolusi",
+          "distance_from_previous_km": 1.17
+        },
+        {
+          "sequence": 13,
+          "name": "Klender",
+          "road": "Jalan I Gusti Ngurah Rai",
+          "distance_from_previous_km": 1.25
+        },
+        {
+          "sequence": 14,
+          "name": "Bekasi Timur",
+          "road": "Jalan Bekasi Timur",
+          "distance_from_previous_km": 1.22
+        },
+        {
+          "sequence": 15,
+          "name": "Pemuda Merdeka",
+          "road": "Jalan Bekasi Timur",
+          "distance_from_previous_km": 1.22
+        },
+        {
+          "sequence": 16,
+          "name": "Pulo Gadung",
+          "road": "Jalan Bekasi Timur",
+          "distance_from_previous_km": 1.17
+        }
+      ],
+      "max_gap": 1.5,
+      "min_gap": 0.96,
+      "mean_gap": 1.12,
+      "spacing_pass": true,
+      "warnings": []
+    },
+    {
+      "id": "CAS-TJ09",
+      "name": "Pulo Gebang – Rusunawa Marunda via Stasiun Cakung",
+      "km": 27.03,
+      "stops": 21,
+      "vertices": 600,
+      "conf": "MEDIUM",
+      "method": "ROAD_REFERENCE",
+      "roads": [
+        "TJ-K11",
+        "Jalan I Gusti Ngurah Rai",
+        "Jalan Doktor Sumarno",
+        "Penggilingan Raya",
+        "Jalan Bekasi Raya",
+        "Jalan Arteri Kelapa Gading",
+        "Jalan Pegangsaan Dua",
+        "Jalan Raya Tugu",
+        "Jalan Akses Marunda",
+        "Jalan Marunda Bidara",
+        "Jalan Akses Rusun Marunda"
+      ],
+      "stop_table": [
+        {
+          "sequence": 1,
+          "name": "Pulo Gebang",
+          "road": "TJ-K11",
+          "distance_from_previous_km": 0.0
+        },
+        {
+          "sequence": 2,
+          "name": "Stasiun Cakung",
+          "road": "Jalan I Gusti Ngurah Rai",
+          "distance_from_previous_km": 0.91
+        },
+        {
+          "sequence": 3,
+          "name": "Penggilingan",
+          "road": "Penggilingan Raya",
+          "distance_from_previous_km": 1.52
+        },
+        {
+          "sequence": 4,
+          "name": "Penggilingan Raya",
+          "road": "Penggilingan Raya",
+          "distance_from_previous_km": 1.5
+        },
+        {
+          "sequence": 5,
+          "name": "Penggilingan Raya 2",
+          "road": "Penggilingan Raya",
+          "distance_from_previous_km": 1.5
+        },
+        {
+          "sequence": 6,
+          "name": "Pasar Cakung",
+          "road": "Penggilingan Raya",
+          "distance_from_previous_km": 1.72
+        },
+        {
+          "sequence": 7,
+          "name": "Putaran Utara Penggilingan",
+          "road": "Penggilingan Raya",
+          "distance_from_previous_km": 1.22
+        },
+        {
+          "sequence": 8,
+          "name": "Bekasi Raya Cakung",
+          "road": "Jalan Bekasi Raya",
+          "distance_from_previous_km": 1.67
+        },
+        {
+          "sequence": 9,
+          "name": "Bekasi Raya",
+          "road": "Jalan Bekasi Raya",
+          "distance_from_previous_km": 1.1
+        },
+        {
+          "sequence": 10,
+          "name": "Arteri Kelapa Gading",
+          "road": "Jalan Arteri Kelapa Gading",
+          "distance_from_previous_km": 1.1
+        },
+        {
+          "sequence": 11,
+          "name": "Pegangsaan Dua 2",
+          "road": "Jalan Pegangsaan Dua",
+          "distance_from_previous_km": 1.15
+        },
+        {
+          "sequence": 12,
+          "name": "Pegangsaan Dua",
+          "road": "Jalan Pegangsaan Dua",
+          "distance_from_previous_km": 1.15
+        },
+        {
+          "sequence": 13,
+          "name": "Pegangsaan Dua 3",
+          "road": "Jalan Pegangsaan Dua",
+          "distance_from_previous_km": 1.5
+        },
+        {
+          "sequence": 14,
+          "name": "Raya Tugu 2",
+          "road": "Jalan Raya Tugu",
+          "distance_from_previous_km": 1.39
+        },
+        {
+          "sequence": 15,
+          "name": "Logistik",
+          "road": "Jalan Raya Tugu",
+          "distance_from_previous_km": 1.39
+        },
+        {
+          "sequence": 16,
+          "name": "Raya Tugu 3",
+          "road": "Jalan Raya Tugu",
+          "distance_from_previous_km": 0.97
+        },
+        {
+          "sequence": 17,
+          "name": "Raya Tugu",
+          "road": "Jalan Raya Tugu",
+          "distance_from_previous_km": 0.97
+        },
+        {
+          "sequence": 18,
+          "name": "Akses Marunda",
+          "road": "Jalan Akses Marunda",
+          "distance_from_previous_km": 1.78
+        },
+        {
+          "sequence": 19,
+          "name": "Marunda Bidara",
+          "road": "Jalan Marunda Bidara",
+          "distance_from_previous_km": 1.84
+        },
+        {
+          "sequence": 20,
+          "name": "Marunda Makmur",
+          "road": "Jalan Akses Rusun Marunda",
+          "distance_from_previous_km": 1.38
+        },
+        {
+          "sequence": 21,
+          "name": "Rusunawa Marunda",
+          "road": "Jalan Marunda Bidara",
+          "distance_from_previous_km": 1.26
+        }
+      ],
+      "max_gap": 1.84,
+      "min_gap": 0.91,
+      "mean_gap": 1.35,
+      "spacing_pass": true,
+      "warnings": []
+    },
+    {
+      "id": "CAS-TJ11",
+      "name": "Menwa UI – Galunggung",
+      "km": 21.4,
+      "stops": 18,
+      "vertices": 317,
+      "conf": "HIGH",
+      "method": "ROAD_REFERENCE",
+      "roads": [
+        "Jalan Lenteng Agung Raya",
+        "Jalan Pasar Minggu Raya",
+        "Jalan Profesor Dokter Supomo SH",
+        "Jalan Dokter Saharjo",
+        "Jalan Sultan Agung"
+      ],
+      "stop_table": [
+        {
+          "sequence": 1,
+          "name": "Menwa UI",
+          "road": "Jalan Lenteng Agung Raya",
+          "distance_from_previous_km": 0.0
+        },
+        {
+          "sequence": 2,
+          "name": "Lenteng Agung Raya",
+          "road": "Jalan Lenteng Agung Raya",
+          "distance_from_previous_km": 1.1
+        },
+        {
+          "sequence": 3,
+          "name": "Universitas Pancasila",
+          "road": "Jalan Lenteng Agung Raya",
+          "distance_from_previous_km": 1.1
+        },
+        {
+          "sequence": 4,
+          "name": "Lenteng Agung",
+          "road": "Jalan Lenteng Agung Raya",
+          "distance_from_previous_km": 1.13
+        },
+        {
+          "sequence": 5,
+          "name": "Lenteng Agung Raya 2",
+          "road": "Jalan Lenteng Agung Raya",
+          "distance_from_previous_km": 1.5
+        },
+        {
+          "sequence": 6,
+          "name": "Lenteng Agung Raya 3",
+          "road": "Jalan Lenteng Agung Raya",
+          "distance_from_previous_km": 1.08
+        },
+        {
+          "sequence": 7,
+          "name": "Tanjung Barat",
+          "road": "Jalan Lenteng Agung Raya",
+          "distance_from_previous_km": 1.08
+        },
+        {
+          "sequence": 8,
+          "name": "Pasar Minggu Raya",
+          "road": "Jalan Pasar Minggu Raya",
+          "distance_from_previous_km": 1.5
+        },
+        {
+          "sequence": 9,
+          "name": "Pasar Minggu",
+          "road": "Jalan Pasar Minggu Raya",
+          "distance_from_previous_km": 1.58
+        },
+        {
+          "sequence": 10,
+          "name": "Pasar Minggu Raya 2",
+          "road": "Jalan Pasar Minggu Raya",
+          "distance_from_previous_km": 1.5
+        },
+        {
+          "sequence": 11,
+          "name": "Profesor Dokter Supomo SH",
+          "road": "Jalan Profesor Dokter Supomo SH",
+          "distance_from_previous_km": 1.5
+        },
+        {
+          "sequence": 12,
+          "name": "Pancoran",
+          "road": "Jalan Profesor Dokter Supomo SH",
+          "distance_from_previous_km": 1.79
+        },
+        {
+          "sequence": 13,
+          "name": "Soepomo",
+          "road": "Jalan Profesor Dokter Supomo SH",
+          "distance_from_previous_km": 0.95
+        },
+        {
+          "sequence": 14,
+          "name": "Profesor Dokter Supomo SH 2",
+          "road": "Jalan Profesor Dokter Supomo SH",
+          "distance_from_previous_km": 1.07
+        },
+        {
+          "sequence": 15,
+          "name": "Saharjo",
+          "road": "Jalan Dokter Saharjo",
+          "distance_from_previous_km": 1.07
+        },
+        {
+          "sequence": 16,
+          "name": "Sultan Agung 2",
+          "road": "Jalan Sultan Agung",
+          "distance_from_previous_km": 1.15
+        },
+        {
+          "sequence": 17,
+          "name": "Sultan Agung",
+          "road": "Jalan Sultan Agung",
+          "distance_from_previous_km": 1.15
+        },
+        {
+          "sequence": 18,
+          "name": "Galunggung",
+          "road": "Jalan Sultan Agung",
+          "distance_from_previous_km": 1.18
+        }
+      ],
+      "max_gap": 1.79,
+      "min_gap": 0.95,
+      "mean_gap": 1.26,
+      "spacing_pass": true,
+      "warnings": []
+    },
+    {
+      "id": "CAS-TJ10",
+      "name": "PGC – Menwa UI",
+      "km": 15.24,
+      "stops": 10,
+      "vertices": "kept",
+      "conf": "HIGH",
+      "method": "PRESERVE_ENDPOINT_FIX",
+      "roads": [
+        "(CAS-11 geometry preserved; last stop Menwa UI)"
+      ],
+      "stop_table": [
+        {
+          "sequence": 1,
+          "name": "PGC",
+          "road": "Jalan Dewi Sartika",
+          "distance_from_previous_km": 0.0
+        },
+        {
+          "sequence": 2,
+          "name": "Kramat Jati",
+          "road": "TJ-K7",
+          "distance_from_previous_km": 0.76
+        },
+        {
+          "sequence": 3,
+          "name": "Kampung Tengah",
+          "road": "TJ-K7",
+          "distance_from_previous_km": 2.04
+        },
+        {
+          "sequence": 4,
+          "name": "Trikora",
+          "road": "Jalan Raya Bogor",
+          "distance_from_previous_km": 1.97
+        },
+        {
+          "sequence": 5,
+          "name": "Pasar Rebo",
+          "road": "Jalan Raya Bogor",
+          "distance_from_previous_km": 0.92
+        },
+        {
+          "sequence": 6,
+          "name": "Raya Bogor",
+          "road": "Jalan Raya Bogor",
+          "distance_from_previous_km": 1.24
+        },
+        {
+          "sequence": 7,
+          "name": "Cilangkap",
+          "road": "Jalan Raya Bogor",
+          "distance_from_previous_km": 2.14
+        },
+        {
+          "sequence": 8,
+          "name": "Kelapa Dua",
+          "road": "Jalan Komjen Polisi Mohammad Jasin",
+          "distance_from_previous_km": 3.93
+        },
+        {
+          "sequence": 9,
+          "name": "Akses UI / Margonda",
+          "road": "Jalan Raya Margonda",
+          "distance_from_previous_km": 1.66
+        },
+        {
+          "sequence": 10,
+          "name": "Menwa UI",
+          "road": "Jalan Raya Margonda",
+          "distance_from_previous_km": 0.57
+        }
+      ],
+      "spacing_pass": true,
+      "warnings": []
+    }
+  ],
+  "warnings": []
+}

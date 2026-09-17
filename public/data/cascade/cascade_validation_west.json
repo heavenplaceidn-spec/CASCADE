@@ -1,0 +1,173 @@
+{
+  "corridors": [
+    {
+      "id": "KRL-C03-N",
+      "name": "Tangerang – Kutabumi – Rajeg – Mauk",
+      "short": "Tangerang – Mauk",
+      "endpoint": "Tangerang – Mauk",
+      "from_name": "Tangerang",
+      "to_name": "Mauk",
+      "direction": "Tangerang → Mauk",
+      "mode": "krl",
+      "branch_id": "N",
+      "length_km": 25.17,
+      "stop_count": 4,
+      "geometry_confidence": "MEDIUM",
+      "source": "CASCADE KRL C03 — perpanjangan barat, bukan masterplan, bukan KRL existing",
+      "status": "CASCADE_EXTENSION",
+      "network_type": "TRUNK",
+      "plan_type": "EXTENSION",
+      "alignment_type": "RAIL_CORRIDOR",
+      "road_backbone": "Jalan Raya Kutabumi - Kutajaya, Jalan Raya Rajeg, Jalan Raya Rajeg - Mauk",
+      "notes": "KRL-C03-N usulan CASCADE: Tangerang (node cabang, menumpang stasiun KRL existing)–Kutabumi–Rajeg–Mauk. Perpanjangan barat sebagai RAIL_CORRIDOR / NEW_ROW sejajar koridor Pasar Kemis, bukan Imam Bonjol. Bukan KRL Tangerang existing Duri–Tangerang. Bukan masterplan. Tangerang adalah BRANCH_NODE yang sama dengan KRL-C03-S.",
+      "bbox": [
+        106.510319,
+        -6.17681,
+        106.63072,
+        -6.051414
+      ]
+    },
+    {
+      "id": "KRL-C03-S",
+      "name": "Tangerang – Cimone – Bitung – Curug – Legok – Parung Panjang",
+      "short": "Tangerang – Parung Panjang",
+      "endpoint": "Tangerang – Parung Panjang",
+      "from_name": "Tangerang",
+      "to_name": "Parung Panjang",
+      "direction": "Tangerang → Parung Panjang",
+      "mode": "krl",
+      "branch_id": "S",
+      "length_km": 25.92,
+      "stop_count": 6,
+      "geometry_confidence": "MEDIUM",
+      "source": "CASCADE KRL C03 — perpanjangan barat, bukan masterplan, bukan KRL existing",
+      "status": "CASCADE_EXTENSION",
+      "network_type": "TRUNK",
+      "plan_type": "EXTENSION",
+      "alignment_type": "RAIL_CORRIDOR",
+      "road_backbone": "Jalan Gatot Subroto",
+      "notes": "KRL-C03-S usulan CASCADE: Tangerang (node cabang yang sama)–Cimone–Bitung–Curug–Legok–Parung Panjang (interchange KRL Rangkasbitung existing). Bukan masterplan Parung Panjang–Citayam. Tidak mengikuti jalan internal cluster BSD dan tidak memakai Jalan Raya Legok-Karawaci. Bitung adalah node koridor Gatot Subroto / Raya Curug, bukan trase di jalan tol. Crossing tol Jakarta–Merak di Bitung–Curug: GRADE_SEPARATED.",
+      "bbox": [
+        106.565,
+        -6.34425,
+        106.63072,
+        -6.17681
+      ]
+    },
+    {
+      "id": "CAS-MRT-C01-BR02",
+      "name": "Ciputat – Pamulang – BSD – ICE",
+      "short": "Ciputat – ICE BSD",
+      "endpoint": "Ciputat – ICE BSD Hall 10",
+      "from_name": "Ciputat",
+      "to_name": "ICE BSD Hall 10",
+      "direction": "Ciputat → ICE BSD Hall 10",
+      "mode": "mrt",
+      "branch_id": "BR02",
+      "length_km": 23.72,
+      "stop_count": 7,
+      "geometry_confidence": "HIGH",
+      "source": "CASCADE MRT C01-BR02 — cabang Ciputat–BSD–ICE, bukan masterplan, bukan MRT existing",
+      "status": "PROPOSED",
+      "network_type": "BRANCH",
+      "plan_type": "NEW_TRUNK",
+      "alignment_type": "VIADUCT",
+      "road_backbone": "Jalan Laksamana RE Martadinata, Jalan Siliwangi, Jalan Tekno Widya, Jalan Pahlawan Seribu, Jalan BSD Grand Boulevard",
+      "notes": "CAS-MRT-C01-BR02 cabang usulan CASCADE: Ciputat (node pada mainline CAS-MRT-C01)–Pamulang–Jalan Siliwangi–Taman Kota 2 BSD (Taman Tekno / Jl. Tekno Widya, bukan Taman Kota 1)–Rawa Buntu (interchange KRL existing)–Jalan Pelayangan–Boulevard BSD Timur–BSD CBD–ICE BSD Hall 10. Bukan perpanjangan MRT NS existing. Bukan masterplan. Bukan branch Sawangan–Fatmawati. Tidak memaksa trase ke jalan internal cluster BSD; backbone Siliwangi / Pahlawan Seribu / Grand Boulevard.",
+      "bbox": [
+        106.635867,
+        -6.34715,
+        106.748642,
+        -6.296593
+      ]
+    }
+  ],
+  "qa": {
+    "KRL-N": [
+      "possible self-intersection",
+      "retrace-dup 2"
+    ],
+    "KRL-S": [
+      "possible self-intersection",
+      "retrace-dup 2"
+    ],
+    "MRT-BR02": [
+      "possible self-intersection",
+      "retrace-dup 8"
+    ]
+  },
+  "notes_north": [
+    "NEW_ROW-forced 1.39km",
+    "NEW_ROW-forced 2.23km",
+    "NEW_ROW-forced 2.13km",
+    "NEW_ROW-forced 2.31km",
+    "ROAD-MISS-END Jalan Raya Kutabumi - Kutajaya",
+    "OSRM 2.00km vs straight 1.21",
+    "NEW_ROW-forced 2.41km",
+    "NEW_ROW-forced 1.96km",
+    "OSRM 3.39km vs straight 2.28",
+    "ROAD-MISS-END Jalan Raya Rajeg - Mauk",
+    "OSRM 3.10km vs straight 2.87",
+    "OSRM 4.54km vs straight 4.01"
+  ],
+  "notes_south": [
+    "NEW_ROW-forced 1.25km",
+    "NEW_ROW-forced 1.51km",
+    "OSRM 5.11km vs straight 2.40",
+    "OSRM 3.72km vs straight 2.00",
+    "NEW_ROW-forced 2.00km",
+    "NEW_ROW-forced 1.79km",
+    "NEW_ROW-forced 3.47km",
+    "NEW_ROW-forced 3.65km",
+    "NEW_ROW-forced 2.30km",
+    "NEW_ROW-forced 2.39km"
+  ],
+  "notes_br02": [
+    "OSRM 1.96km vs straight 1.73",
+    "OSRM 3.26km vs straight 2.03",
+    "ROAD-MISS-END Jalan Siliwangi",
+    "OSRM 3.27km vs straight 2.55",
+    "OSRM 2.73km vs straight 1.90",
+    "NEW_ROW-forced 2.48km",
+    "OSRM 3.41km vs straight 1.64",
+    "OSRM 1.90km vs straight 1.50",
+    "OSRM 1.96km vs straight 0.93",
+    "OSRM-REJECT ratio 3.35 dist 3051",
+    "NEW_ROW 0.91km",
+    "OSRM 2.84km vs straight 1.97"
+  ],
+  "tj_frozen": {
+    "CAS-TJ01": "68374d307e0f",
+    "CAS-TJ02": "627e12003339",
+    "CAS-TJ03": "c4de9e575e0e",
+    "CAS-TJ04": "e4ddbcd469e9",
+    "CAS-TJ05": "8ac52cb52ef2",
+    "CAS-TJ06": "e2c8cffa534c",
+    "CAS-TJ07": "86db51d43844",
+    "CAS-TJ08": "7a9c59880e8c",
+    "CAS-TJ09": "482d51c48305",
+    "CAS-TJ10": "7aa00eed8a6b",
+    "CAS-TJ11": "4a87154787ef"
+  },
+  "lrt_frozen": {
+    "CAS-LRT-C02": "df511bac7ab9",
+    "CAS-LRT-C04": "e09a32724f56"
+  },
+  "mrt_frozen": {
+    "CAS-MRT-C01": "dc113144e7e7",
+    "CAS-MRT-C01-A": "ae3767b7fef3"
+  },
+  "masterplan_untouched": true,
+  "existing_untouched": true,
+  "tangerang_shared_m": 0.0,
+  "fixes": [
+    "Taman Kota 2 = Tekno Widya 106.68165,-6.32869 (bukan Taman Kota 1)",
+    "KRL-N keluar Tangerang NEW_ROW barat, bukan loop Imam Bonjol",
+    "KRL-S tidak memakai Legok-Karawaci / jalan internal BSD"
+  ],
+  "hashes": {
+    "KRL-C03-N": "711afcad81d6",
+    "KRL-C03-S": "c6ce84ce0d82",
+    "CAS-MRT-C01-BR02": "31ebf64e5ec5"
+  }
+}

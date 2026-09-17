@@ -1,0 +1,278 @@
+{
+  "north": [
+    {
+      "segment_id": "01",
+      "from_node": "Tangerang",
+      "to_node": "Tangerang Barat",
+      "road_name": "Jalan Imam Bonjol",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 1.39,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "02",
+      "from_node": "Tangerang Barat",
+      "to_node": "Poris",
+      "road_name": "Jalan Gatot Subroto",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 2.23,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "03",
+      "from_node": "Poris",
+      "to_node": "Kunciran Barat",
+      "road_name": "new_row",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 2.13,
+      "crossing_type": "GRADE_SEPARATED"
+    },
+    {
+      "segment_id": "04",
+      "from_node": "Kunciran Barat",
+      "to_node": "Pasar Kemis",
+      "road_name": "Jalan Raya Kutabumi - Kutajaya",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 2.31,
+      "crossing_type": "GRADE_SEPARATED"
+    },
+    {
+      "segment_id": "05",
+      "from_node": "Pasar Kemis",
+      "to_node": "Kutabumi",
+      "road_name": "Jalan Raya Kutabumi - Kutajaya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.72,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "06",
+      "from_node": "Kutabumi",
+      "to_node": "Sukamantri",
+      "road_name": "Jalan Raya Rajeg",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 2.41,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "07",
+      "from_node": "Sukamantri",
+      "to_node": "Rajeg Selatan",
+      "road_name": "Jalan Raya Rajeg",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 1.96,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "08",
+      "from_node": "Rajeg Selatan",
+      "to_node": "Rajeg",
+      "road_name": "Jalan Raya Rajeg",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 3.31,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "09",
+      "from_node": "Rajeg",
+      "to_node": "Tamiang",
+      "road_name": "Jalan Raya Rajeg - Mauk",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 3.11,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "10",
+      "from_node": "Tamiang",
+      "to_node": "Mauk",
+      "road_name": "Jalan Raya Rajeg - Mauk",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 4.6,
+      "crossing_type": "AT_GRADE"
+    }
+  ],
+  "south": [
+    {
+      "segment_id": "01",
+      "from_node": "Tangerang",
+      "to_node": "Cikokol Selatan",
+      "road_name": "Jalan Imam Bonjol",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 1.25,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "02",
+      "from_node": "Cikokol Selatan",
+      "to_node": "Cimone",
+      "road_name": "Jalan Gatot Subroto",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 1.51,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "03",
+      "from_node": "Cimone",
+      "to_node": "Cimone Barat",
+      "road_name": "Jalan Gatot Subroto",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 4.28,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "04",
+      "from_node": "Cimone Barat",
+      "to_node": "Bitung",
+      "road_name": "Jalan Gatot Subroto",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 3.29,
+      "crossing_type": "GRADE_SEPARATED"
+    },
+    {
+      "segment_id": "05",
+      "from_node": "Bitung",
+      "to_node": "Bitung Selatan",
+      "road_name": "Jalan Gatot Subroto",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 2.0,
+      "crossing_type": "GRADE_SEPARATED"
+    },
+    {
+      "segment_id": "06",
+      "from_node": "Bitung Selatan",
+      "to_node": "Curug",
+      "road_name": "Jalan Raya PLP Curug",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 1.79,
+      "crossing_type": "GRADE_SEPARATED"
+    },
+    {
+      "segment_id": "07",
+      "from_node": "Curug",
+      "to_node": "Binong",
+      "road_name": "Jalan Raya PLP Curug",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 3.47,
+      "crossing_type": "GRADE_SEPARATED"
+    },
+    {
+      "segment_id": "08",
+      "from_node": "Binong",
+      "to_node": "Legok",
+      "road_name": "Jalan Raya Curug",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 3.65,
+      "crossing_type": "GRADE_SEPARATED"
+    },
+    {
+      "segment_id": "09",
+      "from_node": "Legok",
+      "to_node": "Parung Panjang Utara",
+      "road_name": "Jalan Raya Curug",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 2.3,
+      "crossing_type": "GRADE_SEPARATED"
+    },
+    {
+      "segment_id": "10",
+      "from_node": "Parung Panjang Utara",
+      "to_node": "Parung Panjang",
+      "road_name": "Jalan Raya Curug",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 2.39,
+      "crossing_type": "GRADE_SEPARATED"
+    }
+  ],
+  "mrt_br02": [
+    {
+      "segment_id": "01",
+      "from_node": "Ciputat",
+      "to_node": "Ciputat Selatan",
+      "road_name": "Jalan Laksamana RE Martadinata",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.97,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "02",
+      "from_node": "Ciputat Selatan",
+      "to_node": "Pamulang",
+      "road_name": "Jalan Laksamana RE Martadinata",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 3.1,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "03",
+      "from_node": "Pamulang",
+      "to_node": "Siliwangi",
+      "road_name": "Jalan Siliwangi",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 3.28,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "04",
+      "from_node": "Siliwangi",
+      "to_node": "Pondok Jagung",
+      "road_name": "Jalan Siliwangi",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.48,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "05",
+      "from_node": "Pondok Jagung",
+      "to_node": "Taman Kota 2",
+      "road_name": "Jalan Buaran Raya",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 2.48,
+      "crossing_type": "AT_GRADE"
+    },
+    {
+      "segment_id": "06",
+      "from_node": "Taman Kota 2",
+      "to_node": "Rawa Buntu",
+      "road_name": "Jalan Tekno Widya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.75,
+      "crossing_type": "VIADUCT"
+    },
+    {
+      "segment_id": "07",
+      "from_node": "Rawa Buntu",
+      "to_node": "Pelayangan",
+      "road_name": "Jalan Pahlawan Seribu",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.92,
+      "crossing_type": "VIADUCT"
+    },
+    {
+      "segment_id": "08",
+      "from_node": "Pelayangan",
+      "to_node": "Boulevard BSD Timur",
+      "road_name": "Jalan Pahlawan Seribu",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.87,
+      "crossing_type": "VIADUCT"
+    },
+    {
+      "segment_id": "09",
+      "from_node": "Boulevard BSD Timur",
+      "to_node": "BSD CBD",
+      "road_name": "Jalan BSD Grand Boulevard",
+      "alignment_type": "RAIL_CORRIDOR",
+      "length_km": 0.91,
+      "crossing_type": "VIADUCT"
+    },
+    {
+      "segment_id": "10",
+      "from_node": "BSD CBD",
+      "to_node": "ICE BSD Hall 10",
+      "road_name": "Jalan BSD Grand Boulevard",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.97,
+      "crossing_type": "VIADUCT"
+    }
+  ]
+}

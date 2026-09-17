@@ -1,0 +1,18 @@
+[
+  {
+    "route": "KRL_PP_CITAYAM",
+    "issue": "Sawangan 513m from alignment (ROUTE_NODE)"
+  },
+  {
+    "route": "MRT_3",
+    "issue": "Hasyim Asy'ari 439m from alignment (REFERENCE)"
+  },
+  {
+    "route": "MRT_3",
+    "issue": "Cibitung 1864m from alignment (EXISTING_CONNECTION)"
+  },
+  {
+    "route": "LRT_JKT_1C",
+    "issue": "length 2.83 vs source 2.4 (17.9%)"
+  }
+]

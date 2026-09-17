@@ -1,0 +1,130 @@
+{
+  "corridors": [
+    {
+      "id": "CAS-MRT-C01",
+      "name": "Lebak Bulus – Ancol",
+      "short": "Lebak Bulus – Ancol",
+      "endpoint": "Lebak Bulus – Ancol",
+      "from_name": "Lebak Bulus",
+      "to_name": "Ancol",
+      "direction": "Lebak Bulus → Ancol",
+      "mode": "mrt",
+      "branch_id": "MAIN",
+      "length_km": 70.69,
+      "stop_count": 25,
+      "geometry_confidence": "MEDIUM",
+      "source": "CASCADE MRT C01 — usulan analisis, bukan masterplan, bukan MRT Jakarta existing",
+      "status": "PROPOSED",
+      "network_type": "MRT",
+      "plan_type": "NEW_TRUNK",
+      "alignment_type": "VIADUCT",
+      "road_backbone": "Jalan Kelapa Dua Raya, Jalan RA. Fadillah, Jalan Kesehatan, Jalan Tahi Bonar Simatupang, Jalan Condet Raya, Jalan Jatinegara Barat Raya, Jalan Matraman, Jalan Pramuka",
+      "notes": "CAS-MRT-C01 mainline usulan CASCADE: Lebak Bulus–Ciputat (BRANCH)–Parung–Sawangan (BRANCH)–Depok Baru–Margonda–Kelapa Dua–Jalan RA Fadillah–Jalan Kesehatan–TB Simatupang–Jalan Raya Condet–PGC–Dewi Sartika–Otista–Jatinegara Barat–Matraman Raya–Pramuka–Kramat Raya–Senen–Pasar Senen–Gunung Sahari–Ancol. Bukan lewat Cibubur, Ciracas, Pasar Rebo, atau Kampung Rambutan. Bukan MRT existing. Bukan masterplan. Vertex kontrol ≠ otomatis stasiun.",
+      "bbox": [
+        106.74062,
+        -6.407631,
+        106.86882,
+        -6.12786
+      ]
+    }
+  ],
+  "qa": [
+    "possible self-intersection",
+    "retrace-dup 59"
+  ],
+  "notes_east": [
+    "OSRM-REJECT ratio 2.28 dist 3297",
+    "NEW_ROW 1.45km",
+    "OSRM-REJECT ratio 4.24 dist 5478",
+    "NEW_ROW 1.29km",
+    "OSRM-REJECT ratio 4.69 dist 6066",
+    "NEW_ROW 1.29km",
+    "ROAD Jalan Kelapa Dua Raya 1.14km snap 2/0",
+    "NEW_ROW-forced 1.99km",
+    "ROAD Jalan RA. Fadillah 0.51km snap 1/0",
+    "OSRM 3.53km vs straight 2.83",
+    "OSRM 0.90km vs straight 0.88",
+    "ROAD Jalan Kesehatan 0.34km snap 0/0",
+    "ROAD Jalan Tahi Bonar Simatupang 0.29km snap 0/2",
+    "ROAD Jalan Condet Raya 2.77km snap 1/0",
+    "ROAD Jalan Condet Raya 1.24km snap 0/0",
+    "ROAD Jalan Condet Raya 0.87km snap 0/142",
+    "NEW_ROW-forced 1.10km",
+    "NEW_ROW-forced 0.95km",
+    "NEW_ROW-forced 1.31km",
+    "NEW_ROW-forced 0.84km",
+    "ROAD Jalan Jatinegara Barat Raya 1.33km snap 67/188",
+    "OSRM 3.24km vs straight 2.27",
+    "OSRM 3.58km vs straight 1.80",
+    "OSRM-REJECT ratio 2.64 dist 3136",
+    "NEW_ROW 1.19km",
+    "OSRM-REJECT ratio 3.52 dist 3619",
+    "NEW_ROW 1.03km",
+    "NEW_ROW-forced 2.62km",
+    "OSRM-REJECT ratio 2.51 dist 2621",
+    "NEW_ROW 1.04km",
+    "OSRM-REJECT ratio 2.60 dist 4961",
+    "NEW_ROW 1.91km",
+    "length 70.69 vs straight 19.6"
+  ],
+  "forbidden_km": {
+    "kampung_rambutan_m": 2303.2,
+    "ciracas_m": 2003.4,
+    "pasar_rebo_m": 1375.0
+  },
+  "tj_frozen": {
+    "CAS-TJ01": "68374d307e0f",
+    "CAS-TJ02": "627e12003339",
+    "CAS-TJ03": "c4de9e575e0e",
+    "CAS-TJ04": "e4ddbcd469e9",
+    "CAS-TJ05": "8ac52cb52ef2",
+    "CAS-TJ06": "e2c8cffa534c",
+    "CAS-TJ07": "86db51d43844",
+    "CAS-TJ08": "7a9c59880e8c",
+    "CAS-TJ09": "482d51c48305",
+    "CAS-TJ10": "7aa00eed8a6b",
+    "CAS-TJ11": "4a87154787ef"
+  },
+  "lrt_frozen": {
+    "CAS-LRT-C02": "df511bac7ab9",
+    "CAS-LRT-C04": "e09a32724f56"
+  },
+  "frozen_other": {
+    "CAS-MRT-C01-A": "ae3767b7fef3",
+    "CAS-MRT-C01-BR02": "31ebf64e5ec5",
+    "KRL-C03-N": "711afcad81d6",
+    "KRL-C03-S": "c6ce84ce0d82"
+  },
+  "masterplan_untouched": true,
+  "existing_untouched": true,
+  "hashes": {
+    "CAS-MRT-C01": "37fa18ba8527"
+  },
+  "stops": [
+    "Lebak Bulus",
+    "Ciputat Timur",
+    "Ciputat",
+    "Rempoa",
+    "Pondok Cabe",
+    "Bojongsari Utara",
+    "Bojongsari",
+    "Parung Bingung",
+    "Sawangan",
+    "Sawangan Timur",
+    "Mampang Depok",
+    "Depok Baru",
+    "Margonda",
+    "Kelapa Dua",
+    "RA Fadillah",
+    "Cijantung",
+    "Condet",
+    "PGC",
+    "Otista",
+    "Kampung Melayu",
+    "Matraman",
+    "Pramuka",
+    "Senen",
+    "Gunung Sahari",
+    "Ancol"
+  ]
+}

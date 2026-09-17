@@ -1,0 +1,285 @@
+{
+  "main_stops": [
+    "Lebak Bulus",
+    "Ciputat Timur",
+    "Ciputat",
+    "Rempoa",
+    "Pondok Cabe",
+    "Bojongsari Utara",
+    "Bojongsari",
+    "Parung Bingung",
+    "Sawangan",
+    "Sawangan Timur",
+    "Mampang Depok",
+    "Depok Baru",
+    "Margonda",
+    "Cimanggis",
+    "Cibubur Junction",
+    "Cibubur",
+    "Ciracas",
+    "Pasar Rebo",
+    "Cijantung",
+    "Kampung Rambutan",
+    "PGC",
+    "Condet",
+    "Duren Kalibata",
+    "Cawang",
+    "Kampung Melayu",
+    "Tebet",
+    "Manggarai",
+    "Matraman",
+    "Salemba",
+    "Pramuka",
+    "Senen",
+    "Gunung Sahari",
+    "Ancol"
+  ],
+  "main_gaps": [
+    {
+      "from": "Lebak Bulus",
+      "to": "Ciputat",
+      "gap_km": 5.25,
+      "candidates": [
+        {
+          "name": "Ciputat Timur",
+          "score": 25.0,
+          "along_km": 3.37
+        }
+      ],
+      "selected": "Ciputat Timur",
+      "gap_reason": ""
+    },
+    {
+      "from": "Ciputat",
+      "to": "Pondok Cabe",
+      "gap_km": 6.43,
+      "candidates": [
+        {
+          "name": "Rempoa",
+          "score": 23.0,
+          "along_km": 7.02
+        }
+      ],
+      "selected": "Rempoa",
+      "gap_reason": ""
+    },
+    {
+      "from": "Pondok Cabe",
+      "to": "Bojongsari",
+      "gap_km": 6.12,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": "NO_STRONG_NODE"
+    },
+    {
+      "from": "Bojongsari",
+      "to": "Parung Bingung",
+      "gap_km": 1.47,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Parung Bingung",
+      "to": "Sawangan",
+      "gap_km": 2.9,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Sawangan",
+      "to": "Mampang Depok",
+      "gap_km": 7.31,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": "NO_STRONG_NODE"
+    },
+    {
+      "from": "Mampang Depok",
+      "to": "Depok Baru",
+      "gap_km": 2.97,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Depok Baru",
+      "to": "Margonda",
+      "gap_km": 2.73,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Margonda",
+      "to": "Cimanggis",
+      "gap_km": 3.71,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": "NO_STRONG_NODE"
+    },
+    {
+      "from": "Cimanggis",
+      "to": "Cibubur",
+      "gap_km": 5.35,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": "NO_STRONG_NODE"
+    },
+    {
+      "from": "Cibubur",
+      "to": "Ciracas",
+      "gap_km": 2.65,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Ciracas",
+      "to": "Pasar Rebo",
+      "gap_km": 1.53,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Pasar Rebo",
+      "to": "Cijantung",
+      "gap_km": 1.53,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Cijantung",
+      "to": "Kampung Rambutan",
+      "gap_km": 3.6,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": "NO_STRONG_NODE"
+    },
+    {
+      "from": "Kampung Rambutan",
+      "to": "PGC",
+      "gap_km": 5.88,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": "NO_STRONG_NODE"
+    },
+    {
+      "from": "PGC",
+      "to": "Condet",
+      "gap_km": 2.65,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Condet",
+      "to": "Cawang",
+      "gap_km": 4.96,
+      "candidates": [
+        {
+          "name": "Duren Kalibata",
+          "score": 44.4,
+          "along_km": 64.53
+        }
+      ],
+      "selected": "Duren Kalibata",
+      "gap_reason": ""
+    },
+    {
+      "from": "Cawang",
+      "to": "Kampung Melayu",
+      "gap_km": 2.69,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Kampung Melayu",
+      "to": "Tebet",
+      "gap_km": 1.04,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Tebet",
+      "to": "Manggarai",
+      "gap_km": 1.92,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Manggarai",
+      "to": "Matraman",
+      "gap_km": 0.97,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Matraman",
+      "to": "Salemba",
+      "gap_km": 2.17,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Salemba",
+      "to": "Pramuka",
+      "gap_km": 1.96,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Pramuka",
+      "to": "Senen",
+      "gap_km": 3.77,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": "NO_STRONG_NODE"
+    },
+    {
+      "from": "Senen",
+      "to": "Gunung Sahari",
+      "gap_km": 2.34,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": ""
+    },
+    {
+      "from": "Gunung Sahari",
+      "to": "Ancol",
+      "gap_km": 3.49,
+      "candidates": [],
+      "selected": null,
+      "gap_reason": "NO_STRONG_NODE"
+    }
+  ],
+  "branch_stops": [
+    "Sawangan",
+    "Limo",
+    "Cinere",
+    "Krukut",
+    "Andara",
+    "Cilandak",
+    "Fatmawati"
+  ],
+  "br02_stops": [
+    "Ciputat",
+    "Pamulang",
+    "Siliwangi",
+    "Pondok Jagung",
+    "Taman Kota 2",
+    "Rawa Buntu",
+    "BSD CBD",
+    "ICE BSD Hall 10"
+  ],
+  "parung_town_distance_m": 2052.3
+}

@@ -1,0 +1,135 @@
+{
+  "corridors": [
+    {
+      "id": "CAS-MRT-C01",
+      "name": "Lebak Bulus – Ancol",
+      "short": "Lebak Bulus – Ancol",
+      "endpoint": "Lebak Bulus – Ancol",
+      "from_name": "Lebak Bulus",
+      "to_name": "Ancol",
+      "direction": "Lebak Bulus → Ancol",
+      "mode": "mrt",
+      "branch_id": "MAIN",
+      "length_km": 87.4,
+      "stop_count": 33,
+      "geometry_confidence": "MEDIUM",
+      "source": "CASCADE MRT C01 — usulan analisis, bukan masterplan, bukan MRT Jakarta existing",
+      "status": "PROPOSED",
+      "network_type": "MRT",
+      "plan_type": "NEW_TRUNK",
+      "alignment_type": "VIADUCT",
+      "road_backbone": "Jalan Lebak Bulus Raya, Jalan Ciputat Raya, Jalan Laksamana RE Martadinata, Jalan Raya Parung—Ciputat, Jalan Raya Sawangan, Jalan Arif Rahman Hakim, Jalan Tole Iskandar, Jalan Raya Bogor, Jalan Condet Raya, Jalan Dewi Sartika, Jalan Otto Iskandar Dinata, Jalan Gunung Sahari Raya",
+      "notes": "CAS-MRT-C01 mainline usulan CASCADE: Lebak Bulus–Ciputat (BRANCH)–arah Parung (Bojongsari, bukan terminus Parung)–Parung Bingung–Sawangan (BRANCH)–Depok Baru–Margonda–Cimanggis–Cibubur–Ciracas–Pasar Rebo–Cijantung (Mall Graha / RA Fadillah di Raya Bogor)–Kampung Rambutan–PGC–Condet (via Condet Raya, bukan diagonal)–Dewi Sartika–Otista–Kampung Melayu–Tebet–Manggarai–Matraman–Salemba–Pramuka–Senen–Gunung Sahari–Ancol. Bukan MRT existing. Bukan masterplan. Parung kota bukan stasiun. Stasiun tambahan dari spatial scan ±2 km.",
+      "bbox": [
+        106.74062,
+        -6.407631,
+        106.88215,
+        -6.12786
+      ]
+    },
+    {
+      "id": "CAS-MRT-C01-A",
+      "name": "Sawangan – Fatmawati",
+      "short": "Sawangan – Fatmawati",
+      "endpoint": "Sawangan – Fatmawati",
+      "from_name": "Sawangan",
+      "to_name": "Fatmawati",
+      "direction": "Sawangan → Fatmawati",
+      "mode": "mrt",
+      "branch_id": "A",
+      "length_km": 18.53,
+      "stop_count": 7,
+      "geometry_confidence": "HIGH",
+      "source": "CASCADE MRT C01 — usulan analisis, bukan masterplan, bukan MRT Jakarta existing",
+      "status": "PROPOSED",
+      "network_type": "BRANCH",
+      "plan_type": "NEW_TRUNK",
+      "alignment_type": "VIADUCT",
+      "road_backbone": "Jalan Raya Limo, Jalan Cinere Raya, Jalan Andara",
+      "notes": "CAS-MRT-C01-A branch: Sawangan–Limo–Cinere–Krukut–Andara–Cilandak–Fatmawati. Bukan mainline. Bukan branch BSD.",
+      "bbox": [
+        106.763712,
+        -6.402311,
+        106.803809,
+        -6.29147
+      ]
+    }
+  ],
+  "qa": {
+    "MAIN": [
+      "possible self-intersection",
+      "retrace-dup 80"
+    ],
+    "BRANCH": []
+  },
+  "notes_main": [
+    "NEW_ROW 1.95km",
+    "ROAD Jalan Otto Iskandar Dinata 0.23km snap 7/60",
+    "OSRM 1.03km vs straight 0.95",
+    "NEW_ROW-forced 1.93km",
+    "NEW_ROW-forced 0.47km",
+    "NEW_ROW-forced 0.51km",
+    "NEW_ROW-forced 0.93km",
+    "NEW_ROW-forced 0.78km",
+    "NEW_ROW-forced 0.45km",
+    "NEW_ROW-forced 0.72km",
+    "NEW_ROW-forced 0.60km",
+    "NEW_ROW-forced 0.61km",
+    "NEW_ROW-forced 0.78km",
+    "NEW_ROW-forced 1.05km",
+    "NEW_ROW-forced 0.68km",
+    "NEW_ROW-forced 0.71km",
+    "NEW_ROW-forced 0.54km",
+    "NEW_ROW-forced 1.19km",
+    "OSRM-REJECT ratio 3.07 dist 3629",
+    "NEW_ROW 1.18km",
+    "OSRM 2.18km vs straight 1.42",
+    "OSRM-REJECT ratio 3.90 dist 5370",
+    "NEW_ROW 1.38km",
+    "length 87.4 vs straight 19.6"
+  ],
+  "notes_branch": [
+    "OSRM 7.71km vs straight 5.64",
+    "OSRM 2.62km vs straight 2.28",
+    "OSRM-REJECT ratio 2.34 dist 3948",
+    "NEW_ROW 1.69km",
+    "OSRM 2.21km vs straight 1.23",
+    "OSRM 3.98km vs straight 2.53",
+    "OSRM-REJECT ratio 2.37 dist 1976",
+    "NEW_ROW 0.84km"
+  ],
+  "tj_frozen": {
+    "CAS-TJ01": "68374d307e0f",
+    "CAS-TJ02": "627e12003339",
+    "CAS-TJ03": "c4de9e575e0e",
+    "CAS-TJ04": "e4ddbcd469e9",
+    "CAS-TJ05": "8ac52cb52ef2",
+    "CAS-TJ06": "e2c8cffa534c",
+    "CAS-TJ07": "86db51d43844",
+    "CAS-TJ08": "7a9c59880e8c",
+    "CAS-TJ09": "482d51c48305",
+    "CAS-TJ10": "7aa00eed8a6b",
+    "CAS-TJ11": "4a87154787ef"
+  },
+  "lrt_frozen": {
+    "CAS-LRT-C02": "df511bac7ab9",
+    "CAS-LRT-C04": "e09a32724f56"
+  },
+  "krl_frozen": {
+    "KRL-C03-N": "711afcad81d6",
+    "KRL-C03-S": "c6ce84ce0d82"
+  },
+  "br02_frozen": "31ebf64e5ec5",
+  "masterplan_untouched": true,
+  "existing_untouched": true,
+  "parung_is_terminus": false,
+  "parung_town_distance_m": 2052.3,
+  "sawangan_shared_m": 0.0,
+  "ciputat_shared_m": 0.0,
+  "fatmawati_vs_main_m": 1969.3,
+  "hashes": {
+    "CAS-MRT-C01": "cfb941bba95d",
+    "CAS-MRT-C01-A": "ae3767b7fef3",
+    "CAS-MRT-C01-BR02": "31ebf64e5ec5"
+  }
+}

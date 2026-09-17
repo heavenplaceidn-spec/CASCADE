@@ -1,0 +1,180 @@
+{
+  "Taman Kota 2 BSD": [
+    {
+      "lon": 106.6854238,
+      "lat": -6.3347569,
+      "name": "Taman Tekno X, BSD City, Serpong, Tangerang Selatan, Banten, Indonesia",
+      "type": "industrial",
+      "cls": "landuse"
+    },
+    {
+      "lon": 106.6802806,
+      "lat": -6.2905266,
+      "name": "Jalan Taman Cikurai, BSD City, Serpong, Tangerang Selatan, Banten, 15330, Indonesia",
+      "type": "residential",
+      "cls": "highway"
+    },
+    {
+      "lon": 106.6827207,
+      "lat": -6.3082073,
+      "name": "Jalan Taman Tanjung II, Dadap, BSD City, Serpong, Tangerang Selatan, Banten, 15310, Indonesia",
+      "type": "residential",
+      "cls": "highway"
+    }
+  ],
+  "Jalan Pelayangan BSD": [],
+  "ICE BSD": [
+    {
+      "lon": 106.6365721,
+      "lat": -6.300681,
+      "name": "Indonesia Convention Exhibition, 1, Jalan BSD Grand Boulevard, BSD City, Pagedangan, Kabupaten Tangerang, Banten, 15339, Indonesia",
+      "type": "yes",
+      "cls": "building"
+    }
+  ],
+  "The Breeze BSD": [
+    {
+      "lon": 106.65437,
+      "lat": -6.3012645,
+      "name": "The Breeze, Jalan BSD Grand Boulevard, BSD City, Tangerang, Cisauk, Kabupaten Tangerang, Banten, 15311, Indonesia",
+      "type": "mall",
+      "cls": "shop"
+    },
+    {
+      "lon": 106.6538303,
+      "lat": -6.3046136,
+      "name": "The Breeze, Jalan Tol Serpong–Balaraja, BSD City, Sampora, Cisauk, Kabupaten Tangerang, Banten, 15345, Indonesia",
+      "type": "motorcycle_parking",
+      "cls": "amenity"
+    },
+    {
+      "lon": 106.6531034,
+      "lat": -6.3013739,
+      "name": "The Breeze, BSD Green Connector, BSD Green Office Park, BSD City, Sampora, Cisauk, Kabupaten Tangerang, Banten, 15345, Indonesia",
+      "type": "bus_stop",
+      "cls": "highway"
+    }
+  ],
+  "Rajeg": [
+    {
+      "lon": 106.5105045,
+      "lat": -6.1116105,
+      "name": "Rajeg, Kabupaten Tangerang, Banten, 15540, Indonesia",
+      "type": "administrative",
+      "cls": "boundary"
+    },
+    {
+      "lon": 106.5052612,
+      "lat": -6.1193004,
+      "name": "Rajeg, Kabupaten Tangerang, Banten, 15540, Indonesia",
+      "type": "village",
+      "cls": "place"
+    }
+  ],
+  "Mauk": [
+    {
+      "lon": 106.512868,
+      "lat": -6.051606,
+      "name": "Mauk, Kabupaten Tangerang, Banten, Indonesia",
+      "type": "administrative",
+      "cls": "boundary"
+    },
+    {
+      "lon": 106.5096653,
+      "lat": -6.0590326,
+      "name": "Mauk, Kabupaten Tangerang, Banten, Indonesia",
+      "type": "town",
+      "cls": "place"
+    }
+  ],
+  "Pasar Kemis": [
+    {
+      "lon": 106.55981,
+      "lat": -6.1610033,
+      "name": "Pasar Kemis, Kabupaten Tangerang, Banten, Indonesia",
+      "type": "administrative",
+      "cls": "boundary"
+    },
+    {
+      "lon": 106.5334967,
+      "lat": -6.1719917,
+      "name": "Pasar Kemis, Kabupaten Tangerang, Banten, 15560, Indonesia",
+      "type": "town",
+      "cls": "place"
+    }
+  ],
+  "Kutabumi": [
+    {
+      "lon": 106.5451204,
+      "lat": -6.1573874,
+      "name": "Kutabumi 5, Pasar Kemis, Kabupaten Tangerang, Banten, Indonesia",
+      "type": "residential",
+      "cls": "landuse"
+    },
+    {
+      "lon": 106.5633428,
+      "lat": -6.1552247,
+      "name": "Jalan Raya Kutabumi - Kutajaya, Kuta Bumi, Pasar Kemis, Kabupaten Tangerang, Banten, 16551, Indonesia",
+      "type": "tertiary",
+      "cls": "highway"
+    },
+    {
+      "lon": 106.5628644,
+      "lat": -6.1639695,
+      "name": "Jalan Raya Kutabumi - Kutajaya, Kuta Jaya, Pasar Kemis, Kabupaten Tangerang, Banten, 15561, Indonesia",
+      "type": "tertiary",
+      "cls": "highway"
+    }
+  ],
+  "Cimone": [
+    {
+      "lon": 106.6107809,
+      "lat": -6.1916652,
+      "name": "Cimone, Karawaci, Tangerang, Banten, 15113, Indonesia",
+      "type": "administrative",
+      "cls": "boundary"
+    }
+  ],
+  "Bitung Curug": [
+    {
+      "lon": 106.5630665,
+      "lat": -6.2196056,
+      "name": "Bitung, Jalan Tol Jakarta–Merak, Pos Bitung, Kadu, Curug, Kabupaten Tangerang, Banten, 15136, Indonesia",
+      "type": "motorway_junction",
+      "cls": "highway"
+    },
+    {
+      "lon": 106.5632844,
+      "lat": -6.2256515,
+      "name": "Pos Bitung, Kadu, Curug, Kabupaten Tangerang, Banten, 15136, Indonesia",
+      "type": "hamlet",
+      "cls": "place"
+    }
+  ],
+  "Legok": [
+    {
+      "lon": 106.5746584,
+      "lat": -6.3024829,
+      "name": "Legok, Kabupaten Tangerang, Banten, 15820, Indonesia",
+      "type": "administrative",
+      "cls": "boundary"
+    },
+    {
+      "lon": 106.5905577,
+      "lat": -6.284298,
+      "name": "Legok, Kabupaten Tangerang, Banten, Indonesia",
+      "type": "administrative",
+      "cls": "boundary"
+    }
+  ],
+  "Pamulang": [
+    {
+      "lon": 106.7352902,
+      "lat": -6.3360771,
+      "name": "Pamulang Barat, Pamulang, Tangerang Selatan, Banten, 15417, Indonesia",
+      "type": "administrative",
+      "cls": "boundary"
+    }
+  ],
+  "Siliwangi Serpong": []
+}

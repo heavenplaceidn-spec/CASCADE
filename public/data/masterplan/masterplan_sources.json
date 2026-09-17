@@ -1,0 +1,66 @@
+[
+  {
+    "source_id": "KRL_PP_CITAYAM_src",
+    "title": "BPTJ Review Trase",
+    "year": 2022,
+    "source_type": "BPTJ_STUDY",
+    "url": "https://bptj.dephub.go.id",
+    "notes": "Dokumen perencanaan / operator. AI adalah proses digitasi, bukan sumber."
+  },
+  {
+    "source_id": "OUTER_RING_RAIL_src",
+    "title": "RTRW / BPTJ Review Trase",
+    "year": 2022,
+    "source_type": "RTRW",
+    "url": "",
+    "notes": "Dokumen perencanaan / operator. AI adalah proses digitasi, bukan sumber."
+  },
+  {
+    "source_id": "MRT_2B_src",
+    "title": "PT MRT Jakarta (Perseroda)",
+    "year": 2026,
+    "source_type": "OFFICIAL_OPERATOR",
+    "url": "",
+    "notes": "Dokumen perencanaan / operator. AI adalah proses digitasi, bukan sumber."
+  },
+  {
+    "source_id": "MRT_3_src",
+    "title": "JICA / MRT Jakarta East-West Line",
+    "year": 2024,
+    "source_type": "JICA_STUDY",
+    "url": "",
+    "notes": "Dokumen perencanaan / operator. AI adalah proses digitasi, bukan sumber."
+  },
+  {
+    "source_id": "MRT_4_src",
+    "title": "MRT Jakarta Fase 4 concept",
+    "year": 2024,
+    "source_type": "OFFICIAL_MASTERPLAN",
+    "url": "",
+    "notes": "Dokumen perencanaan / operator. AI adalah proses digitasi, bukan sumber."
+  },
+  {
+    "source_id": "LRT_JKT_3B_src",
+    "title": "PT LRT Jakarta",
+    "year": 2024,
+    "source_type": "OFFICIAL_MASTERPLAN",
+    "url": "",
+    "notes": "Dokumen perencanaan / operator. AI adalah proses digitasi, bukan sumber."
+  },
+  {
+    "source_id": "LRT_BOGOR_src",
+    "title": "Studi trase LRT Jabodebek Bogor",
+    "year": 2022,
+    "source_type": "OFFICIAL_MASTERPLAN",
+    "url": "",
+    "notes": "Dokumen perencanaan / operator. AI adalah proses digitasi, bukan sumber."
+  },
+  {
+    "source_id": "LRT_09_src",
+    "title": "Masterplan LRT koridor 09",
+    "year": 2020,
+    "source_type": "SECONDARY_REFERENCE",
+    "url": "",
+    "notes": "Dokumen perencanaan / operator. AI adalah proses digitasi, bukan sumber."
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "corridors": [
+    {
+      "id": "CAS-LRT-C02",
+      "name": "Cibubur Junction – Mekarsari",
+      "short": "Cibubur Junction – Mekarsari",
+      "endpoint": "Cibubur Junction – Mekarsari",
+      "from_name": "Cibubur Junction",
+      "to_name": "Mekarsari",
+      "direction": "Cibubur Junction → Mekarsari",
+      "mode": "lrt",
+      "length_km": 14.86,
+      "stop_count": 6,
+      "geometry_confidence": "MEDIUM",
+      "source": "CASCADE LRT C02/C04 — usulan analisis, bukan masterplan, bukan LRT Jabodebek existing",
+      "status": "PROPOSED",
+      "network_type": "LRT",
+      "plan_type": "NEW_TRUNK",
+      "alignment_type": "ROAD_MEDIAN",
+      "road_backbone": "Jalan Jambore Raya, Jalan Transyogi, Jalan Raya Cileungsi-Jonggol",
+      "notes": "CAS-LRT-C02 usulan CASCADE: Cibubur Junction–Jatisari–Limus Nunggal–Cileungsi Barat (kontrol)–Cileungsi–Cileungsi Timur–Mekarsari along Transyogi / Jalan Raya Cileungsi–Jonggol. Bukan Harjamukti–Baranangsiang (itu masterplan LRT_BOGOR). Bukan LRT 09 Jagakarsa–Cileungsi. Cileungsi Barat = control vertex, bukan stasiun wajib. Stasiun Cibubur Junction bukan duplikat Harjamukti.",
+      "bbox": [
+        106.893491,
+        -6.4154,
+        106.9838,
+        -6.367975
+      ]
+    },
+    {
+      "id": "CAS-LRT-C04",
+      "name": "Dukuh Atas – Soekarno-Hatta Airport",
+      "short": "Dukuh Atas – Bandara Soekarno-Hatta",
+      "endpoint": "Dukuh Atas – Soekarno-Hatta Airport",
+      "from_name": "Dukuh Atas",
+      "to_name": "Soekarno-Hatta Airport",
+      "direction": "Dukuh Atas → Soekarno-Hatta Airport",
+      "mode": "lrt",
+      "length_km": 42.47,
+      "stop_count": 21,
+      "geometry_confidence": "MEDIUM",
+      "source": "CASCADE LRT C02/C04 — usulan analisis, bukan masterplan, bukan LRT Jabodebek existing",
+      "status": "PROPOSED",
+      "network_type": "LRT",
+      "plan_type": "NEW_TRUNK",
+      "alignment_type": "ROAD_MEDIAN",
+      "road_backbone": "Jalan Jenderal Sudirman, Jalan Kyai Haji Mas Mansyur, Jalan Bendungan Hilir, NEW_ROW, Jalan Jatibaru, Jalan Cideng Barat, Jalan Tomang Raya, Jalan Letnan Jenderal Siswondo Parman, Jalan Profesor Dokter Latumeten, Jalan Daan Mogot, Jalan Kamal Raya, Jalan Pantai Indah Kapuk, Jalan Tol Profesor Doktor Sedyatmo",
+      "notes": "CAS-LRT-C04 usulan CASCADE: Dukuh Atas–Karet–Bendungan Hilir (kontrol)–Tanah Abang–Petojo–Tomang–S. Parman–Central Park–Tanjung Duren–Grogol–Jelambar–Damai–Pedongkelan–Kapuk–Kamal–PIK–PIK Avenue–PIK 2–Airport Connector–Soekarno-Hatta. Bukan masterplan. Bukan existing LRT Jabodebek. Dukuh Atas menumpang simpul LRT existing (bukan duplikat). Bendungan Hilir = control, bukan stasiun wajib. PIK 2–Bandara memakai NEW_ROW di lahan reklamasi jika OSM/OSRM memutar.",
+      "bbox": [
+        106.6559,
+        -6.2092,
+        106.82554,
+        -6.091179
+      ]
+    }
+  ],
+  "qa": {
+    "C02": [
+      "possible self-intersection / duplicate vertex"
+    ],
+    "C04": [
+      "possible self-intersection / duplicate vertex"
+    ]
+  },
+  "notes_c02": [
+    "OSRM 3.93km vs straight 1.74",
+    "OSRM 3.93km vs straight 2.38",
+    "OSRM-REJECT ratio 2.67",
+    "NEW_ROW 1.66km",
+    "OSRM-REJECT ratio 3.42",
+    "NEW_ROW 1.28km",
+    "OSRM-REJECT ratio 3.80",
+    "NEW_ROW 1.15km",
+    "OSRM 1.72km vs straight 1.19",
+    "OSRM 1.65km vs straight 1.00",
+    "OSRM-REJECT ratio 5.19",
+    "NEW_ROW 0.85km"
+  ],
+  "notes_c04": [
+    "OSRM-REJECT ratio 1.96",
+    "NEW_ROW-split 2.59km",
+    "OSRM 1.78km vs straight 1.50",
+    "OSRM 2.87km vs straight 2.20",
+    "OSRM-REJECT ratio 4.13",
+    "NEW_ROW 1.60km",
+    "forced-join gap:147 Kamal-PIK",
+    "ROAD Jalan Pantai Indah Kapuk 0.07km snap 124/86",
+    "OSRM-REJECT ratio 6.33",
+    "NEW_ROW 2.06km",
+    "OSRM 3.03km vs straight 1.79",
+    "OSRM 2.50km vs straight 2.04",
+    "OSRM-REJECT ratio 3.13",
+    "NEW_ROW-split 3.40km",
+    "OSRM-REJECT ratio 4.44",
+    "NEW_ROW 1.97km"
+  ],
+  "tj_frozen": {
+    "CAS-TJ01": "68374d307e0f",
+    "CAS-TJ02": "627e12003339",
+    "CAS-TJ03": "c4de9e575e0e",
+    "CAS-TJ04": "e4ddbcd469e9",
+    "CAS-TJ05": "8ac52cb52ef2",
+    "CAS-TJ06": "e2c8cffa534c",
+    "CAS-TJ07": "86db51d43844",
+    "CAS-TJ08": "7a9c59880e8c",
+    "CAS-TJ09": "482d51c48305",
+    "CAS-TJ10": "7aa00eed8a6b",
+    "CAS-TJ11": "4a87154787ef"
+  },
+  "masterplan_untouched": true,
+  "existing_untouched": true,
+  "harjamukti_baranangsiang_is_masterplan": true,
+  "cas_lrt_ids": [
+    "CAS-LRT-C02",
+    "CAS-LRT-C04"
+  ]
+}

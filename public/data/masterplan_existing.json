@@ -1,0 +1,304 @@
+{
+  "corridors": [
+    {
+      "id": "KRL_PP_CITAYAM",
+      "name": "KRL Parung Panjang–Citayam",
+      "short": "Parung Panjang–Citayam",
+      "mode": "krl",
+      "status": "MASTERPLAN",
+      "endpoint": "Parung Panjang - Citayam",
+      "length_km": 30.77,
+      "length_source_km": 31.73,
+      "stop_count": 7,
+      "geometry_confidence": "MEDIUM",
+      "source": "BPTJ Review Trase",
+      "source_year": 2022,
+      "bbox": [
+        106.568689,
+        -6.450029,
+        106.802056,
+        -6.344251
+      ]
+    },
+    {
+      "id": "OUTER_RING_RAIL",
+      "name": "Outer Ring Railway Nambo–Cikarang–Tanjung Priok",
+      "short": "Outer Ring",
+      "mode": "rail",
+      "status": "PLANNED",
+      "endpoint": "Nambo - Tanjung Priok",
+      "length_km": 72.15,
+      "length_source_km": null,
+      "stop_count": 19,
+      "geometry_confidence": "LOW",
+      "source": "RTRW / BPTJ Review Trase",
+      "source_year": 2022,
+      "bbox": [
+        106.88145,
+        -6.466816,
+        107.143559,
+        -6.110601
+      ]
+    },
+    {
+      "id": "MRT_2A",
+      "name": "MRT North-South Fase 2A Bundaran HI–Kota",
+      "short": "MRT 2A",
+      "mode": "mrt",
+      "status": "CONSTRUCTION",
+      "endpoint": "Bundaran HI - Kota",
+      "length_km": 6.13,
+      "length_source_km": 5.8,
+      "stop_count": 8,
+      "geometry_confidence": "HIGH",
+      "source": "PT MRT Jakarta (Perseroda)",
+      "source_year": 2026,
+      "bbox": [
+        106.8148,
+        -6.191849,
+        106.823062,
+        -6.1377
+      ]
+    },
+    {
+      "id": "MRT_2B",
+      "name": "MRT North-South Fase 2B Kota–Ancol Barat",
+      "short": "MRT 2B",
+      "mode": "mrt",
+      "status": "FS",
+      "endpoint": "Kota - Ancol Barat",
+      "length_km": 4.75,
+      "length_source_km": 5.2,
+      "stop_count": 4,
+      "geometry_confidence": "MEDIUM",
+      "source": "PT MRT Jakarta (Perseroda)",
+      "source_year": 2026,
+      "bbox": [
+        106.812,
+        -6.1377,
+        106.829061,
+        -6.1165
+      ]
+    },
+    {
+      "id": "MRT_3",
+      "name": "MRT East-West Fase 3 Balaraja–Cikarang",
+      "short": "MRT East-West",
+      "mode": "mrt",
+      "status": "MASTERPLAN",
+      "endpoint": "Balaraja - Cikarang",
+      "length_km": 81.92,
+      "length_source_km": 84.1,
+      "stop_count": 20,
+      "geometry_confidence": "MEDIUM",
+      "source": "JICA / MRT Jakarta East-West Line",
+      "source_year": 2024,
+      "bbox": [
+        106.462787,
+        -6.255552,
+        107.145764,
+        -6.157701
+      ]
+    },
+    {
+      "id": "MRT_4",
+      "name": "MRT Fase 4 Fatmawati–TMII",
+      "short": "MRT 4",
+      "mode": "mrt",
+      "status": "MASTERPLAN",
+      "endpoint": "Fatmawati - TMII",
+      "length_km": 14.07,
+      "length_source_km": null,
+      "stop_count": 10,
+      "geometry_confidence": "MEDIUM",
+      "source": "MRT Jakarta Fase 4 concept",
+      "source_year": 2024,
+      "bbox": [
+        106.792463,
+        -6.309335,
+        106.883145,
+        -6.281771
+      ]
+    },
+    {
+      "id": "LRT_JKT_1B",
+      "name": "LRT Jakarta 1B Velodrome–Manggarai",
+      "short": "LRT Jakarta 1B",
+      "mode": "lrt",
+      "status": "CONSTRUCTION",
+      "endpoint": "Velodrome - Manggarai",
+      "length_km": 5.42,
+      "length_source_km": null,
+      "stop_count": 6,
+      "geometry_confidence": "HIGH",
+      "source": "PT LRT Jakarta",
+      "source_year": 2025,
+      "bbox": [
+        106.850246,
+        -6.211095,
+        106.891218,
+        -6.191926
+      ]
+    },
+    {
+      "id": "LRT_JKT_1C",
+      "name": "LRT Jakarta 1C Manggarai–Dukuh Atas",
+      "short": "LRT Jakarta 1C",
+      "mode": "lrt",
+      "status": "PLANNED",
+      "endpoint": "Manggarai - Dukuh Atas BNI",
+      "length_km": 2.83,
+      "length_source_km": 2.4,
+      "stop_count": 2,
+      "geometry_confidence": "MEDIUM",
+      "source": "PT LRT Jakarta",
+      "source_year": 2024,
+      "bbox": [
+        106.825536,
+        -6.211095,
+        106.850246,
+        -6.204805
+      ]
+    },
+    {
+      "id": "LRT_JKT_2A",
+      "name": "LRT Jakarta 2A Kelapa Gading–JIS",
+      "short": "LRT Jakarta 2A",
+      "mode": "lrt",
+      "status": "PLANNED",
+      "endpoint": "Kelapa Gading - JIS",
+      "length_km": 7.75,
+      "length_source_km": 8.2,
+      "stop_count": 7,
+      "geometry_confidence": "MEDIUM",
+      "source": "PT LRT Jakarta",
+      "source_year": 2024,
+      "bbox": [
+        106.86096,
+        -6.157205,
+        106.914138,
+        -6.119595
+      ]
+    },
+    {
+      "id": "LRT_JKT_2B",
+      "name": "LRT Jakarta 2B Velodrome–Klender",
+      "short": "LRT Jakarta 2B",
+      "mode": "lrt",
+      "status": "PLANNED",
+      "endpoint": "Velodrome - Klender",
+      "length_km": 4.07,
+      "length_source_km": 4.5,
+      "stop_count": 4,
+      "geometry_confidence": "LOW",
+      "source": "PT LRT Jakarta",
+      "source_year": 2024,
+      "bbox": [
+        106.891218,
+        -6.21324,
+        106.908333,
+        -6.191926
+      ]
+    },
+    {
+      "id": "LRT_JKT_3A",
+      "name": "LRT Jakarta 3A JIS–Rajawali",
+      "short": "LRT Jakarta 3A",
+      "mode": "lrt",
+      "status": "PLANNED",
+      "endpoint": "JIS - Rajawali",
+      "length_km": 5.59,
+      "length_source_km": 5.6,
+      "stop_count": 4,
+      "geometry_confidence": "LOW",
+      "source": "PT LRT Jakarta",
+      "source_year": 2024,
+      "bbox": [
+        106.82989,
+        -6.146312,
+        106.86096,
+        -6.122832
+      ]
+    },
+    {
+      "id": "LRT_JKT_3B",
+      "name": "LRT Jakarta 3B Klender–Halim",
+      "short": "LRT Jakarta 3B",
+      "mode": "lrt",
+      "status": "PLANNED",
+      "endpoint": "Klender - Halim",
+      "length_km": 4.43,
+      "length_source_km": 4.9,
+      "stop_count": 3,
+      "geometry_confidence": "LOW",
+      "source": "PT LRT Jakarta",
+      "source_year": 2024,
+      "bbox": [
+        106.88728,
+        -6.245852,
+        106.90115,
+        -6.21324
+      ]
+    },
+    {
+      "id": "LRT_BOGOR",
+      "name": "LRT Jabodebek perpanjangan Harjamukti–Baranangsiang",
+      "short": "LRT Bogor",
+      "mode": "lrt",
+      "status": "UNDER_STUDY",
+      "endpoint": "Harjamukti - Baranangsiang",
+      "length_km": 28.05,
+      "length_source_km": null,
+      "stop_count": 8,
+      "geometry_confidence": "LOW",
+      "source": "Studi trase LRT Jabodebek Bogor",
+      "source_year": 2022,
+      "bbox": [
+        106.816,
+        -6.601,
+        106.895686,
+        -6.37389
+      ]
+    },
+    {
+      "id": "LRT_09",
+      "name": "LRT 09 Jagakarsa–Cileungsi",
+      "short": "LRT 09",
+      "mode": "lrt",
+      "status": "MASTERPLAN",
+      "endpoint": "Jagakarsa - Cileungsi",
+      "length_km": 19.94,
+      "length_source_km": null,
+      "stop_count": 5,
+      "geometry_confidence": "LOW",
+      "source": "Masterplan LRT koridor 09",
+      "source_year": 2020,
+      "bbox": [
+        106.8282,
+        -6.402,
+        106.992,
+        -6.33
+      ]
+    }
+  ],
+  "color": "#E58A3A",
+  "crs": "EPSG:4326",
+  "qa": {
+    "total_corridors": 14,
+    "total_stations": 107,
+    "total_interchanges": 20,
+    "corridors_with_0_stations": [],
+    "corridors_with_1_station": [],
+    "stations_off_line": [],
+    "broken_endpoints": [],
+    "duplicate_station_ids": [],
+    "invalid_geometries": [],
+    "disconnected_segments": 0,
+    "target": {
+      "corridors_with_0_stations": 0,
+      "stations_off_line": 0,
+      "broken_endpoints": 0,
+      "invalid_geometries": 0
+    }
+  }
+}

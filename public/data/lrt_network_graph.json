@@ -1,0 +1,277 @@
+{
+  "nodes": [
+    {
+      "id": "lrt-hjm",
+      "name": "Harjamukti",
+      "type": "terminus",
+      "lines": [
+        "CB"
+      ]
+    },
+    {
+      "id": "lrt-crc",
+      "name": "Ciracas",
+      "type": "intermediate",
+      "lines": [
+        "CB"
+      ]
+    },
+    {
+      "id": "lrt-kpr",
+      "name": "Kampung Rambutan",
+      "type": "interchange",
+      "lines": [
+        "CB"
+      ]
+    },
+    {
+      "id": "lrt-tmi",
+      "name": "TMII",
+      "type": "intermediate",
+      "lines": [
+        "CB"
+      ]
+    },
+    {
+      "id": "lrt-cwg",
+      "name": "Cawang",
+      "type": "branching",
+      "lines": [
+        "BK",
+        "CB"
+      ]
+    },
+    {
+      "id": "lrt-clw",
+      "name": "Ciliwung",
+      "type": "intermediate",
+      "lines": [
+        "BK",
+        "CB"
+      ]
+    },
+    {
+      "id": "lrt-ckk",
+      "name": "Cikoko",
+      "type": "interchange",
+      "lines": [
+        "BK",
+        "CB"
+      ]
+    },
+    {
+      "id": "lrt-pnc",
+      "name": "Pancoran",
+      "type": "intermediate",
+      "lines": [
+        "BK",
+        "CB"
+      ]
+    },
+    {
+      "id": "lrt-kng",
+      "name": "Kuningan",
+      "type": "intermediate",
+      "lines": [
+        "BK",
+        "CB"
+      ]
+    },
+    {
+      "id": "lrt-rss",
+      "name": "Rasuna Said",
+      "type": "intermediate",
+      "lines": [
+        "BK",
+        "CB"
+      ]
+    },
+    {
+      "id": "lrt-stb",
+      "name": "Setiabudi",
+      "type": "intermediate",
+      "lines": [
+        "BK",
+        "CB"
+      ]
+    },
+    {
+      "id": "lrt-dka",
+      "name": "Dukuh Atas BNI",
+      "type": "terminus",
+      "lines": [
+        "BK",
+        "CB"
+      ]
+    },
+    {
+      "id": "lrt-jtm",
+      "name": "Jatimulya",
+      "type": "terminus",
+      "lines": [
+        "BK"
+      ]
+    },
+    {
+      "id": "lrt-bkb",
+      "name": "Bekasi Barat",
+      "type": "intermediate",
+      "lines": [
+        "BK"
+      ]
+    },
+    {
+      "id": "lrt-ck2",
+      "name": "Cikunir 2",
+      "type": "intermediate",
+      "lines": [
+        "BK"
+      ]
+    },
+    {
+      "id": "lrt-ck1",
+      "name": "Cikunir 1",
+      "type": "intermediate",
+      "lines": [
+        "BK"
+      ]
+    },
+    {
+      "id": "lrt-jbb",
+      "name": "Jatibening Baru",
+      "type": "intermediate",
+      "lines": [
+        "BK"
+      ]
+    },
+    {
+      "id": "lrt-hlm",
+      "name": "Halim",
+      "type": "interchange",
+      "lines": [
+        "BK"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "lrt-e-cb-01",
+      "from": "Harjamukti",
+      "to": "Ciracas",
+      "segment_type": "CIBUBUR_BRANCH",
+      "length_km": 5.678
+    },
+    {
+      "id": "lrt-e-cb-02",
+      "from": "Ciracas",
+      "to": "Kampung Rambutan",
+      "segment_type": "CIBUBUR_BRANCH",
+      "length_km": 1.615
+    },
+    {
+      "id": "lrt-e-cb-03",
+      "from": "Kampung Rambutan",
+      "to": "TMII",
+      "segment_type": "CIBUBUR_BRANCH",
+      "length_km": 1.963
+    },
+    {
+      "id": "lrt-e-cb-04",
+      "from": "TMII",
+      "to": "Cawang",
+      "segment_type": "CIBUBUR_BRANCH",
+      "length_km": 5.405
+    },
+    {
+      "id": "lrt-e-bk-01",
+      "from": "Jatimulya",
+      "to": "Bekasi Barat",
+      "segment_type": "BEKASI_BRANCH",
+      "length_km": 3.669
+    },
+    {
+      "id": "lrt-e-bk-02",
+      "from": "Bekasi Barat",
+      "to": "Cikunir 2",
+      "segment_type": "BEKASI_BRANCH",
+      "length_km": 3.283
+    },
+    {
+      "id": "lrt-e-bk-03",
+      "from": "Cikunir 2",
+      "to": "Cikunir 1",
+      "segment_type": "BEKASI_BRANCH",
+      "length_km": 1.272
+    },
+    {
+      "id": "lrt-e-bk-04",
+      "from": "Cikunir 1",
+      "to": "Jatibening Baru",
+      "segment_type": "BEKASI_BRANCH",
+      "length_km": 2.656
+    },
+    {
+      "id": "lrt-e-bk-05",
+      "from": "Jatibening Baru",
+      "to": "Halim",
+      "segment_type": "BEKASI_BRANCH",
+      "length_km": 5.165
+    },
+    {
+      "id": "lrt-e-bk-06",
+      "from": "Halim",
+      "to": "Cawang",
+      "segment_type": "BEKASI_BRANCH",
+      "length_km": 1.43
+    },
+    {
+      "id": "lrt-e-tr-01",
+      "from": "Cawang",
+      "to": "Ciliwung",
+      "segment_type": "SHARED_TRUNK",
+      "length_km": 0.851
+    },
+    {
+      "id": "lrt-e-tr-02",
+      "from": "Ciliwung",
+      "to": "Cikoko",
+      "segment_type": "SHARED_TRUNK",
+      "length_km": 0.764
+    },
+    {
+      "id": "lrt-e-tr-03",
+      "from": "Cikoko",
+      "to": "Pancoran",
+      "segment_type": "SHARED_TRUNK",
+      "length_km": 2.079
+    },
+    {
+      "id": "lrt-e-tr-04",
+      "from": "Pancoran",
+      "to": "Kuningan",
+      "segment_type": "SHARED_TRUNK",
+      "length_km": 2.576
+    },
+    {
+      "id": "lrt-e-tr-05",
+      "from": "Kuningan",
+      "to": "Rasuna Said",
+      "segment_type": "SHARED_TRUNK",
+      "length_km": 0.805
+    },
+    {
+      "id": "lrt-e-tr-06",
+      "from": "Rasuna Said",
+      "to": "Setiabudi",
+      "segment_type": "SHARED_TRUNK",
+      "length_km": 1.396
+    },
+    {
+      "id": "lrt-e-tr-07",
+      "from": "Setiabudi",
+      "to": "Dukuh Atas BNI",
+      "segment_type": "SHARED_TRUNK",
+      "length_km": 0.808
+    }
+  ]
+}

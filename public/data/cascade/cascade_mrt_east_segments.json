@@ -1,0 +1,239 @@
+{
+  "east": [
+    {
+      "segment_id": "01",
+      "from_node": "Depok Baru",
+      "to_node": "Margonda Selatan",
+      "road_name": "Jalan Raya Margonda",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.45
+    },
+    {
+      "segment_id": "02",
+      "from_node": "Margonda Selatan",
+      "to_node": "Margonda",
+      "road_name": "Jalan Raya Margonda",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.29
+    },
+    {
+      "segment_id": "03",
+      "from_node": "Margonda",
+      "to_node": "Kelapa Dua",
+      "road_name": "Jalan Raya Margonda",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.29
+    },
+    {
+      "segment_id": "04",
+      "from_node": "Kelapa Dua",
+      "to_node": "Kelapa Dua Utara",
+      "road_name": "Jalan Kelapa Dua Raya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.21
+    },
+    {
+      "segment_id": "05",
+      "from_node": "Kelapa Dua Utara",
+      "to_node": "RA Fadillah Selatan",
+      "road_name": "Jalan Kelapa Dua Raya",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.99
+    },
+    {
+      "segment_id": "06",
+      "from_node": "RA Fadillah Selatan",
+      "to_node": "RA Fadillah",
+      "road_name": "Jalan RA. Fadillah",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 0.47
+    },
+    {
+      "segment_id": "07",
+      "from_node": "RA Fadillah",
+      "to_node": "Cijantung",
+      "road_name": "Jalan RA. Fadillah",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 3.53
+    },
+    {
+      "segment_id": "08",
+      "from_node": "Cijantung",
+      "to_node": "Kesehatan",
+      "road_name": "Jalan RA. Fadillah",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 0.91
+    },
+    {
+      "segment_id": "09",
+      "from_node": "Kesehatan",
+      "to_node": "TB Simatupang",
+      "road_name": "Jalan Kesehatan",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 0.34
+    },
+    {
+      "segment_id": "10",
+      "from_node": "TB Simatupang",
+      "to_node": "Condet Selatan",
+      "road_name": "Jalan Tahi Bonar Simatupang",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 0.87
+    },
+    {
+      "segment_id": "11",
+      "from_node": "Condet Selatan",
+      "to_node": "Condet",
+      "road_name": "Jalan Condet Raya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.86
+    },
+    {
+      "segment_id": "12",
+      "from_node": "Condet",
+      "to_node": "Condet Utara",
+      "road_name": "Jalan Condet Raya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.3
+    },
+    {
+      "segment_id": "13",
+      "from_node": "Condet Utara",
+      "to_node": "PGC",
+      "road_name": "Jalan Condet Raya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 1.03
+    },
+    {
+      "segment_id": "14",
+      "from_node": "PGC",
+      "to_node": "Cililitan",
+      "road_name": "Jalan Dewi Sartika",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.1
+    },
+    {
+      "segment_id": "15",
+      "from_node": "Cililitan",
+      "to_node": "Otista",
+      "road_name": "Jalan Dewi Sartika",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.95
+    },
+    {
+      "segment_id": "16",
+      "from_node": "Otista",
+      "to_node": "Otista Utara",
+      "road_name": "Jalan Otto Iskandar Dinata",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.31
+    },
+    {
+      "segment_id": "17",
+      "from_node": "Otista Utara",
+      "to_node": "Jatinegara Barat",
+      "road_name": "Jalan Otto Iskandar Dinata",
+      "alignment_type": "NEW_ROW",
+      "length_km": 0.84
+    },
+    {
+      "segment_id": "18",
+      "from_node": "Jatinegara Barat",
+      "to_node": "Matraman",
+      "road_name": "Jalan Jatinegara Barat Raya",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 4.18
+    },
+    {
+      "segment_id": "19",
+      "from_node": "Matraman",
+      "to_node": "Pramuka",
+      "road_name": "Jalan Matraman",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 3.24
+    },
+    {
+      "segment_id": "20",
+      "from_node": "Pramuka",
+      "to_node": "Pramuka Barat",
+      "road_name": "Jalan Pramuka",
+      "alignment_type": "ROAD_MEDIAN",
+      "length_km": 2.91
+    },
+    {
+      "segment_id": "21",
+      "from_node": "Pramuka Barat",
+      "to_node": "Kramat Raya",
+      "road_name": "Jalan Pramuka",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.19
+    },
+    {
+      "segment_id": "22",
+      "from_node": "Kramat Raya",
+      "to_node": "Senen",
+      "road_name": "Jalan Kramat Raya",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.03
+    },
+    {
+      "segment_id": "23",
+      "from_node": "Senen",
+      "to_node": "Gunung Sahari",
+      "road_name": "Jalan Pasar Senen",
+      "alignment_type": "NEW_ROW",
+      "length_km": 2.62
+    },
+    {
+      "segment_id": "24",
+      "from_node": "Gunung Sahari",
+      "to_node": "Kemayoran Utara",
+      "road_name": "Jalan Gunung Sahari Raya",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.04
+    },
+    {
+      "segment_id": "25",
+      "from_node": "Kemayoran Utara",
+      "to_node": "Ancol",
+      "road_name": "Jalan Benyamin Sueb",
+      "alignment_type": "NEW_ROW",
+      "length_km": 1.91
+    }
+  ],
+  "notes": [
+    "OSRM-REJECT ratio 2.28 dist 3297",
+    "NEW_ROW 1.45km",
+    "OSRM-REJECT ratio 4.24 dist 5478",
+    "NEW_ROW 1.29km",
+    "OSRM-REJECT ratio 4.69 dist 6066",
+    "NEW_ROW 1.29km",
+    "ROAD Jalan Kelapa Dua Raya 1.14km snap 2/0",
+    "NEW_ROW-forced 1.99km",
+    "ROAD Jalan RA. Fadillah 0.51km snap 1/0",
+    "OSRM 3.53km vs straight 2.83",
+    "OSRM 0.90km vs straight 0.88",
+    "ROAD Jalan Kesehatan 0.34km snap 0/0",
+    "ROAD Jalan Tahi Bonar Simatupang 0.29km snap 0/2",
+    "ROAD Jalan Condet Raya 2.77km snap 1/0",
+    "ROAD Jalan Condet Raya 1.24km snap 0/0",
+    "ROAD Jalan Condet Raya 0.87km snap 0/142",
+    "NEW_ROW-forced 1.10km",
+    "NEW_ROW-forced 0.95km",
+    "NEW_ROW-forced 1.31km",
+    "NEW_ROW-forced 0.84km",
+    "ROAD Jalan Jatinegara Barat Raya 1.33km snap 67/188",
+    "OSRM 3.24km vs straight 2.27",
+    "OSRM 3.58km vs straight 1.80",
+    "OSRM-REJECT ratio 2.64 dist 3136",
+    "NEW_ROW 1.19km",
+    "OSRM-REJECT ratio 3.52 dist 3619",
+    "NEW_ROW 1.03km",
+    "NEW_ROW-forced 2.62km",
+    "OSRM-REJECT ratio 2.51 dist 2621",
+    "NEW_ROW 1.04km",
+    "OSRM-REJECT ratio 2.60 dist 4961",
+    "NEW_ROW 1.91km",
+    "length 70.69 vs straight 19.6"
+  ]
+}

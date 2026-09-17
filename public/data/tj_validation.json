@@ -1,0 +1,162 @@
+{
+  "corridors": {
+    "1": {
+      "n_source_features": 2,
+      "chosen_tprute": "Blok M - Kota",
+      "geom": "MultiLineString",
+      "parts": 10,
+      "length_km": 28.81,
+      "loop": false,
+      "npts": 471
+    },
+    "2": {
+      "n_source_features": 2,
+      "chosen_tprute": "Pulo Gadung - Monumen Nasional",
+      "geom": "MultiLineString",
+      "parts": 9,
+      "length_km": 25.18,
+      "loop": false,
+      "npts": 349
+    },
+    "3": {
+      "n_source_features": 2,
+      "chosen_tprute": "BRT",
+      "geom": "MultiLineString",
+      "parts": 5,
+      "length_km": 31.96,
+      "loop": false,
+      "npts": 534
+    },
+    "4": {
+      "n_source_features": 2,
+      "chosen_tprute": "Pulo Gadung - Galunggung",
+      "geom": "MultiLineString",
+      "parts": 17,
+      "length_km": 29.05,
+      "loop": false,
+      "npts": 463
+    },
+    "5": {
+      "n_source_features": 2,
+      "chosen_tprute": "BRT",
+      "geom": "MultiLineString",
+      "parts": 4,
+      "length_km": 23.88,
+      "loop": false,
+      "npts": 361
+    },
+    "6": {
+      "n_source_features": 2,
+      "chosen_tprute": "BRT",
+      "geom": "MultiLineString",
+      "parts": 16,
+      "length_km": 28.01,
+      "loop": false,
+      "npts": 617
+    },
+    "7": {
+      "n_source_features": 2,
+      "chosen_tprute": "Kampung Rambutan - Kampung Melayu",
+      "geom": "MultiLineString",
+      "parts": 16,
+      "length_km": 26.95,
+      "loop": false,
+      "npts": 432
+    },
+    "8": {
+      "n_source_features": 2,
+      "chosen_tprute": "BRT",
+      "geom": "MultiLineString",
+      "parts": 9,
+      "length_km": 54.68,
+      "loop": false,
+      "npts": 1026
+    },
+    "9": {
+      "n_source_features": 2,
+      "chosen_tprute": "Pinang Ranti - Pluit",
+      "geom": "MultiLineString",
+      "parts": 30,
+      "length_km": 55.69,
+      "loop": false,
+      "npts": 744
+    },
+    "10": {
+      "n_source_features": 2,
+      "chosen_tprute": "BRT",
+      "geom": "MultiLineString",
+      "parts": 6,
+      "length_km": 38.77,
+      "loop": false,
+      "npts": 507
+    },
+    "11": {
+      "n_source_features": 2,
+      "chosen_tprute": "Pulo Gebang - Kampung Melayu",
+      "geom": "MultiLineString",
+      "parts": 24,
+      "length_km": 26.23,
+      "loop": false,
+      "npts": 392
+    },
+    "12": {
+      "n_source_features": 2,
+      "chosen_tprute": "Tanjung Priok - Pluit",
+      "geom": "MultiLineString",
+      "parts": 48,
+      "length_km": 53.37,
+      "loop": false,
+      "npts": 633
+    },
+    "13": {
+      "n_source_features": 2,
+      "chosen_tprute": "Ciledug - Tegal Mampang",
+      "geom": "MultiLineString",
+      "parts": 8,
+      "length_km": 29.2,
+      "loop": false,
+      "npts": 619
+    },
+    "14": {
+      "n_source_features": 2,
+      "chosen_tprute": "Jakarta International Stadium - Senen",
+      "geom": "MultiLineString",
+      "parts": 5,
+      "length_km": 21.39,
+      "loop": false,
+      "npts": 310
+    }
+  },
+  "halte": {
+    "source_koridor": 257,
+    "accepted": 255,
+    "rejected": 0,
+    "rejected_sample": [],
+    "per_corridor": {
+      "4": 21,
+      "13": 15,
+      "10": 23,
+      "5": 18,
+      "2": 23,
+      "14": 9,
+      "12": 26,
+      "1": 31,
+      "7": 16,
+      "9": 39,
+      "11": 16,
+      "6": 20,
+      "3": 14,
+      "8": 27
+    }
+  },
+  "roads": {
+    "count": 310,
+    "source": "OSM Overpass named motorway/trunk/primary"
+  },
+  "issues": [],
+  "segments": {
+    "count": 207
+  },
+  "crs": "EPSG:4326",
+  "color": "#5865C7"
+}
