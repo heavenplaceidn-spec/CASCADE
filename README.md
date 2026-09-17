@@ -43,6 +43,24 @@ Semua angka dari file, bukan karangan: [`docs/20-40/`](./docs/20-40/).
 6. Properti — [06-PROPERTY.md](./docs/20-40/06-PROPERTY.md)
 7. Indeks file — [07-FILE-INDEX.md](./docs/20-40/07-FILE-INDEX.md)
 
+## 41–60% — tampilan dan proses (bahasa biasa)
+
+Penjelasan ditulis dari kode, tidak meniru teks tugas. Inggris hanya untuk nama teknis.
+
+Folder: [`docs/40-60/`](./docs/40-60/)
+
+1. Tampilan (splash + tiga menu) — [01-TAMPILAN.md](./docs/40-60/01-TAMPILAN.md)
+2. Peta MapLibre dan MAPID — [02-PETA.md](./docs/40-60/02-PETA.md)
+3. Eksplorasi — [03-EKSPLORASI.md](./docs/40-60/03-EKSPLORASI.md)
+4. Simulasi — [04-SIMULASI.md](./docs/40-60/04-SIMULASI.md)
+5. Analisis / SDSS — [05-ANALISIS.md](./docs/40-60/05-ANALISIS.md)
+6. Proses di belakang — [06-PROSES-BELAKANG.md](./docs/40-60/06-PROSES-BELAKANG.md)
+7. Alur klik → popup — [07-ALUR.md](./docs/40-60/07-ALUR.md)
+
+Ringkasnya: satu peta tidak di-reset saat pindah menu. Existing, masterplan, dan usulan CASCADE dibedakan dari **corak**, moda dari **warna**. AI hanya merangkum data yang sudah ada.
+
+## B — Requirement source (cited, not rewritten as our paper)
+
 ## B — Requirement source (cited, not rewritten as our paper)
 
 Assignment PRD:
